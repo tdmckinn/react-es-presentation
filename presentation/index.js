@@ -62,10 +62,18 @@ export default class Presentation extends React.Component {
             </Heading>
           </Slide>
           <Slide transition={["slide"]} bgColor="black" notes="You can even put notes on your slide. How awesome is that?">
-            <Image src={images.kat.replace("/", "")} margin="0px auto 40px" height="293px"/>
-            <Heading size={2} caps fit textColor="primary" textFont="primary">
-              Wait what?
+            <Heading size={1} caps textColor="primary" textFont="primary">
+              Plan
             </Heading>
+            <div style={{color: '#fff'}}>
+              <ol>
+                <li>React JS</li>
+                <li>Relay</li>
+                <li>GraphQL</li>
+                <li>Flow</li>
+                <li>APP DEMO!!!</li>
+              </ol>
+            </div>
           </Slide>
           <Slide transition={["zoom", "fade"]} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
             <CodePane

@@ -1,11 +1,26 @@
----
-"extends":
-  - "eslint-config-defaults/configurations/walmart/es6-react"
-
-"rules":
-  "indent": [2, 2, {"SwitchCase": 1}]
-  "max-len": 0
-
-"env":
-  "browser": true,
-  "node": true
+{
+  "extends": "reactjs",
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "globals": {},
+  "env": {
+    "node": true,
+    "browser": true,
+    "commonjs": true,
+    "es6": true
+  },
+  "rules": {
+    "react/jsx-uses-react": 1,
+    "react/jsx-no-undef": 2,
+    "react/wrap-multilines": 2,
+    "indent": [2, 2],
+    "no-console": 1
+  },
+  "plugins": [
+    "react"
+  ]
+}
