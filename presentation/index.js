@@ -2,24 +2,10 @@
 import React from "react";
 
 // Import Spectacle Core tags
-import {
-  Appear,
-  BlockQuote,
-  Cite,
-  CodePane,
-  Deck,
-  Fill,
-  Heading,
-  Image,
-  Layout,
-  Link,
-  ListItem,
-  List,
-  Markdown,
-  Quote,
-  Slide,
-  Spectacle,
-  Text
+import { Appear, BlockQuote, Cite, CodePane, Deck,
+         Fill, Heading, Image, Layout, Link,
+         ListItem, List, Markdown, Quote, Slide,
+         Spectacle, Text
 } from "spectacle";
 
 // Import image preloader util
@@ -32,20 +18,22 @@ import createTheme from "spectacle/lib/themes/default";
 import Interactive from "../assets/interactive";
 
 // Require CSS
-require("normalize.css");
-require("spectacle/lib/themes/default/index.css");
+require('normalize.css');
+require('spectacle/lib/themes/default/index.css');
 
 const images = {
-  city: require("../assets/city.jpg"),
-  kat: require("../assets/kat.png"),
-  logo: require("../assets/formidable-logo.svg"),
-  markdown: require("../assets/markdown.png")
+  city: require('../assets/city.jpg'),
+  kat: require('../assets/kat.png'),
+  logo: require('../assets/formidable-logo.svg'),
+  markdown: require('../assets/markdown.png'),
+  reactLogo: require('../assets/reactjs-logo.svg'),
+  reactEco: require('../assets/react-eco.png')
 };
 
 preloader(images);
 
 const theme = createTheme({
-  primary: "#00D8FF"
+  primary: '#00D8FF'
 });
 
 export default class Presentation extends React.Component {
@@ -53,13 +41,21 @@ export default class Presentation extends React.Component {
     return (
       <Spectacle theme={theme}>
         <Deck transition={["zoom", "slide"]} transitionDuration={500}>
-          <Slide transition={["zoom"]} bgColor="primary">
-            <Heading size={2} fit caps lineHeight={2} textColor="black">
-              The React.js Ecosystem
+          <Slide transition={["zoom"]} bgColor="black" bgImage={images.reactEco} bgDarken={0.75}>
+            <Heading size={2} fit caps lineHeight={2} textColor="white">
+              The ReactJS Ecosystem
             </Heading>
             <Heading size={1} fit>
-              ReactJS, Relay, GraphQL, Flow, & Redux
+              ReactJS, Relay, GraphQL, Flow, Redux, & (Babel)
             </Heading>
+          </Slide>
+          <Slide bgColor="black">
+            <BlockQuote>
+              <Quote>{`If you think you need to be an expert about something to 
+                    start talking, it's far too late. We need to hear the journey.`}
+              </Quote>
+              <Cite>@getify #FluentConf</Cite>
+            </BlockQuote>
           </Slide>
           <Slide transition={["slide"]} bgColor="black" notes="You can even put notes on your slide. How awesome is that?">
             <Heading size={1} caps textColor="primary" textFont="primary">
@@ -75,12 +71,10 @@ export default class Presentation extends React.Component {
               </ol>
             </div>
           </Slide>
-          <Slide transition={["zoom", "fade"]} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
-            <CodePane
-              lang="jsx"
-              source={require("raw!../assets/deck.example")}
-              margin="20px auto"
-            />
+          <Slide transition={["zoom", "fade"]} bgColor="black" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+            <Heading size={1} caps textColor="primary" textFont="primary">
+              ReactJS
+            </Heading>
           </Slide>
           <Slide transition={["slide"]} bgImage={images.city.replace("/", "")} bgDarken={0.75}>
             <Appear fid="1">
@@ -113,12 +107,6 @@ export default class Presentation extends React.Component {
                 </Heading>
               </Fill>
             </Layout>
-          </Slide>
-          <Slide transition={["slide"]} bgColor="black">
-            <BlockQuote>
-              <Quote>Wonderfully formatted quotes</Quote>
-              <Cite>Ken Wheeler</Cite>
-            </BlockQuote>
           </Slide>
           <Slide transition={["spin", "zoom"]} bgColor="tertiary">
             <Heading caps fit size={1} textColor="primary">
