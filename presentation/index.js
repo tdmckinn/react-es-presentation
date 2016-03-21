@@ -27,8 +27,15 @@ const images = {
   logo: require('../assets/formidable-logo.svg'),
   markdown: require('../assets/markdown.png'),
   reactLogo: require('../assets/reactjs-logo.svg'),
-  reactEco: require('../assets/react-eco.png')
+  reactEco: require('../assets/react-eco.png'),
 };
+
+const gifs = {
+  rockets: require('../assets/rockets.gif'),
+  easter: require('../assets/easterhomer.gif'),
+  happy: require('../assets/happy.gif'),
+  idea: require('../assets/idea.gif')
+}
 
 preloader(images);
 
@@ -71,6 +78,8 @@ export default class Presentation extends React.Component {
               </ol>
             </div>
           </Slide>
+          <Slide transition={["zoom"]} bgColor="black" bgImage={gifs.idea}>
+          </Slide>
           <Slide transition={["zoom", "fade"]} bgColor="black" notes="<ul><li>talk about that</li><li>and that</li></ul>">
             <Heading size={1} caps textColor="primary" textFont="primary">
               ReactJS
@@ -94,17 +103,24 @@ export default class Presentation extends React.Component {
             </Appear>
           </Slide>
           <Slide transition={["zoom", "fade"]} bgColor="primary">
-            <Heading caps fit>Flexible Layouts</Heading>
+            <Heading caps >GraphQL</Heading>
             <Layout>
               <Fill>
-                <Heading size={4} caps textColor="secondary" bgColor="white" margin={10}>
-                  Left
-                </Heading>
+                  <Heading size={4} caps textColor="secondary" bgColor="white" margin={10}>
+                    What is GraphQL?
+                  </Heading>
+                  <Text>GraphQL is a query language created by Facebook in 2012 which provides a common interface between the client and the server for data fetching and manipulations.
+                  </Text>
               </Fill>
               <Fill>
-                <Heading size={4} caps textColor="secondary" bgColor="white" margin={10}>
-                  Right
-                </Heading>
+                <Text>Key concepts of the GraphQL query language are:</Text>
+                <List>
+                  <ListItem>Hierarchical</ListItem>
+                  <ListItem>Product‐centric</ListItem>
+                  <ListItem>Strong‐typing</ListItem>
+                  <ListItem>Client‐specified queries</ListItem>
+                  <ListItem>Introspective</ListItem>
+                </List>
               </Fill>
             </Layout>
           </Slide>
@@ -147,11 +163,15 @@ You can write inline images, [Markdown Links](http://commonmark.org), paragraph 
             </Heading>
             <Interactive/>
           </Slide>
-          <Slide transition={["spin", "slide"]} bgColor="tertiary">
-            <Heading size={1} caps fit lineHeight={1.5} textColor="primary">
-              Made with love in Seattle by
+          <Slide transition={["spin", "slide"]} bgColor="primary">
+            <Heading size={2} caps fit lineHeight={1} textColor="white">
+              Thankyou
             </Heading>
-            <Link href="http://www.formidablelabs.com"><Image width="100%" src={images.logo}/></Link>
+            <List>
+              <ListItem><Link href="https://github.com/tdmckinn/jurastic-waves">App Demo Jurrasic Waves</Link></ListItem>
+              <ListItem><Link href="http://www.formidablelabs.com">Github: @tdmckinn</Link></ListItem>
+              <ListItem><Link href="http://www.formidablelabs.com">Twitter: @TirellMckinnon</Link></ListItem>
+            </List>
           </Slide>
         </Deck>
       </Spectacle>
