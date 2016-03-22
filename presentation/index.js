@@ -80,6 +80,8 @@ export default class Presentation extends React.Component {
           </Slide>
           <Slide transition={["zoom"]} bgColor="black" bgImage={gifs.idea}>
           </Slide>
+          <Slide transition={["zoom"]} bgColor="black" bgImage={gifs.rockets}>
+          </Slide>
           <Slide transition={["zoom", "fade"]} bgColor="black" notes="<ul><li>talk about that</li><li>and that</li></ul>">
             <Heading size={1} caps textColor="primary" textFont="primary">
               ReactJS
@@ -163,9 +165,16 @@ You can write inline images, [Markdown Links](http://commonmark.org), paragraph 
             </Heading>
             <Interactive/>
           </Slide>
+          <Slide transition={["zoom"]} bgColor="black" >
+            <Heading size={1} caps fit textColor="tertiary">
+              App Demo...
+            </Heading>
+          </Slide>
+          <Slide transition={["zoom"]} bgColor="black" bgImage={gifs.easter}>
+          </Slide>
           <Slide transition={["spin", "slide"]} bgColor="primary">
             <Heading size={2} caps fit lineHeight={1} textColor="white">
-              Thankyou
+              Thank You
             </Heading>
             <List>
               <ListItem><Link href="https://github.com/tdmckinn/jurastic-waves">App Demo Jurrasic Waves</Link></ListItem>
