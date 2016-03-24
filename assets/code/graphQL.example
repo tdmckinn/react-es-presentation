@@ -1,0 +1,26 @@
+
+<!-- RESTFUL Query -->
+
+GET /users/1/friends/1/dogs/1?include=user.name,dog.age
+
+
+<!-- GraphQL Query -->
+
+{
+ user(id: 1) {
+   name
+   friends {
+     dogs {
+       name
+     }
+   }
+ }
+}
+
+<!-- GraphQL Query Mutations -->
+
+mutation updateUser($userId: String! $name: String!) {  
+  updateUser(id: $userId name: $name) {
+    name
+  }
+}

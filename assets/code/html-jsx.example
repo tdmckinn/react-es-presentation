@@ -1,4 +1,4 @@
-<!-- Hello world End Result-->
+<!-- HTML End Result-->
 
 <div class="awesome" style="border: 1px solid red">
   <label for="name">Enter your name: </label>
@@ -10,7 +10,7 @@
 
 <!-- JSX -->
 
-var NewComponent = React.createClass({
+var Story = React.createClass({
   render: function() {
     return (
       <div>

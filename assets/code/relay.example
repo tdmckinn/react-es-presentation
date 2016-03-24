@@ -1,0 +1,31 @@
+
+<!-- Relay Query -->
+
+const fragment = Relay.QL`
+  fragment on User {
+    name
+  }
+`;
+
+Relay.createContainer(Story, {
+  fragments: {
+    bar: () => Relay.QL`
+      fragment on Story {
+        author {
+          # Fetch the same information about the story's author ...
+          name
+        },
+        comments {
+          edges {
+            node {
+              author {
+                # ... and the authors of the comments.
+               name
+              },
+            },
+          },
+        },
+      }
+    `,
+  }
+});

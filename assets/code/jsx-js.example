@@ -1,7 +1,7 @@
 <!-- JSX To Javascript -->
 
-var NewComponent = React.createClass({
-  displayName: "NewComponent",
+var Story = React.createClass({
+  displayName: "Story",
 
   render: function render() {
     return React.createElement(

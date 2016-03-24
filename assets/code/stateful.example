@@ -1,6 +1,6 @@
 <!-- Stateful Components -->
 
-class NewComponent extends React.Component {
+class Story extends React.Component {
   constructor() {
     super();
     this.state = {
