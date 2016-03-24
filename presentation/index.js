@@ -1,5 +1,4 @@
 import React from "react";
-import Iframe from 'react-iframe';
 
 // Import Spectacle Core tags
 import { Appear, BlockQuote, Cite, CodePane, Deck,
@@ -10,7 +9,7 @@ import { Appear, BlockQuote, Cite, CodePane, Deck,
 
 import preloader from "spectacle/lib/utils/preloader";
 import createTheme from "spectacle/lib/themes/default";
-import Interactive from "../src/interactive";
+//import Interactive from "../src/interactive";
 
 // Require CSS
 require('normalize.css');
@@ -45,6 +44,7 @@ const theme = createTheme({
 
 export default class Presentation extends React.Component {
   render() {
+    const thankyouListTextSize = '26px';
     return (
       <Spectacle theme={theme}>
         <Deck transition={["zoom", "slide"]} transitionDuration={500}>
@@ -92,7 +92,7 @@ export default class Presentation extends React.Component {
             <Fill>
               <CodePane
                 lang="jsx"
-                source={require("raw!../assets/html-jsx.example")}
+                source={require("raw!../assets/code/html-jsx.example")}
                 margin="20px 1px"
               />
             <Text><Link textColor="primary" href="https://babeljs.io/repl/"> JSX to JS Transformer</Link></Text>
@@ -100,12 +100,40 @@ export default class Presentation extends React.Component {
             <Fill>
               <CodePane
                 lang="jsx"
-                source={require("raw!../assets/jsx-js.example")}
+                source={require("raw!../assets/code/jsx-js.example")}
                 margin="20px 9px"
               />
            </Fill>
           </Layout> 
           </Slide>
+          <Slide transition={["slide"]} bgColor="black">
+          <Text textColor="white">Container / Functional / Pure / Impure </Text>
+           <Layout>
+            <Fill>
+              <CodePane
+                lang="jsx"
+                source={require("raw!../assets/code/stateful.example")}
+                margin="20px 1px"
+              />
+            </Fill>
+            <Fill>
+              <CodePane
+                lang="jsx"
+                source={require("raw!../assets/code/stateless.example")}
+                margin="20px 9px"
+              />
+           </Fill>
+          </Layout> 
+          </Slide>
+          <Slide transition={["zoom"]} bgColor="black">
+           <Heading size={4} caps textColor="secondary" bgColor="white" margin={10}>
+             Why Virtual DOM?
+            </Heading>
+            <Text textColor="white">DOM Abstraction, DOM manipulations are slow </Text>
+            <Text textColor="white">Efficient diff algorithms.
+            Batching DOM read/write operations.
+            Efficient update of sub-tree only.</Text>
+          </Slide>          
           <Slide transition={["zoom", "fade"]} bgImage={images.city.replace("/", "")} bgDarken={0.85}>
             <Heading size={4} caps textColor="secondary" bgColor="white" margin={10}>
               What is GraphQL?
@@ -146,12 +174,12 @@ export default class Presentation extends React.Component {
             <Heading size={1} caps fit textColor="tertiary">
               Honoroable Mentions...
             </Heading>
-             <List>
-                <ListItem>React Native</ListItem>
-                <ListItem>Redux</ListItem>
-                <ListItem>Typescript</ListItem>
-                <ListItem>Faclorjs By Netflix</ListItem>
-              </List>
+            <List textColor="white">
+              <ListItem>React Native</ListItem>
+              <ListItem>Redux</ListItem>
+              <ListItem>Typescript</ListItem>
+              <ListItem>Faclorjs By Netflix</ListItem>
+            </List>
           </Slide>
           <Slide transition={["spin", "slide"]} bgColor="primary">
             <Heading size={1} caps lineHeight={1} textColor="white">
@@ -160,31 +188,30 @@ export default class Presentation extends React.Component {
             <Layout>
               <Fill>
               <Text> Me: </Text>
-                <List textSize="12px">
-                  <ListItem><Link href="https://github.com/tdmckinn/jurastic-waves">Jurrasic Waves</Link></ListItem>
-                  <ListItem><Link href="http://www.formidablelabs.com">Github: @tdmckinn</Link></ListItem>
-                  <ListItem><Link href="http://www.formidablelabs.com">Twitter: @TirellMckinnon</Link></ListItem>
+                <List>
+                  <ListItem textSize={thankyouListTextSize}><Link href="https://github.com/tdmckinn/jurastic-waves">Jurrasic Waves</Link></ListItem>
+                  <ListItem textSize={thankyouListTextSize}><Link href="http://www.formidablelabs.com">Github: @tdmckinn</Link></ListItem>
+                  <ListItem textSize={thankyouListTextSize}><Link href="http://www.formidablelabs.com">Twitter: @TirellMckinnon</Link></ListItem>
                 </List>
               </Fill>
               <Fill>
                 <Text>Resources =></Text>
-                <List textSize="12px">
-                  <ListItem><Link href="https://facebook.github.io/react/">Reactjs</Link></ListItem>
-                  <ListItem><Link href="https://facebook.github.io/relay/">Relay</Link></ListItem>
-                  <ListItem><Link href="http://graphql.org/">GraphQL</Link></ListItem>
-                  <ListItem><Link href="http://flowtype.org/">Flow</Link></ListItem>
-                  <ListItem><Link href="https://github.com/FormidableLabs/spectacle">Spectacle Presentation Library</Link></ListItem>
-                  <ListItem><Link href="https://stackoverflow.com/research/developer-survey-2016">Stackoverflow Devloper Survey</Link></ListItem>
+                <List>
+                  <ListItem textSize={thankyouListTextSize}><Link href="https://facebook.github.io/react/">Reactjs</Link></ListItem>
+                  <ListItem textSize={thankyouListTextSize}><Link href="https://facebook.github.io/relay/">Relay</Link></ListItem>
+                  <ListItem textSize={thankyouListTextSize}><Link href="http://graphql.org/">GraphQL</Link></ListItem>
+                  <ListItem textSize={thankyouListTextSize}><Link href="http://flowtype.org/">Flow</Link></ListItem>
+                  <ListItem textSize={thankyouListTextSize}><Link href="https://github.com/FormidableLabs/spectacle">Spectacle Presentation Library</Link></ListItem>
+                  <ListItem textSize={thankyouListTextSize}><Link href="https://stackoverflow.com/research/developer-survey-2016">Stackoverflow Devloper Survey</Link></ListItem>
                 </List>
               </Fill>
                <Fill>
                 <Text>Resources Cont..</Text>
-                <List textSize="12px">
-                  <ListItem><Link href="https://github.com/reactjs">React Community aka (rackt)</Link></ListItem>
-                  <ListItem><Link href="https://github.com/enaqx/awesome-react">Awseome React</Link></ListItem>
-                  <ListItem><Link href="https://github.com/chentsulin/awesome-graphql">Awseome GraphQL</Link></ListItem>
-                  <ListItem><Link href="https://github.com/FormidableLabs/spectacle">Spectacle Presentation Library</Link></ListItem>
-                  <ListItem><Link href="https://stackoverflow.com/research/developer-survey-2016">Stackoverflow Devloper Survey</Link></ListItem>
+                <List>
+                  <ListItem textSize={thankyouListTextSize}><Link href="https://github.com/reactjs">React Community aka (rackt)</Link></ListItem>
+                  <ListItem textSize={thankyouListTextSize}><Link href="https://github.com/enaqx/awesome-react">Awseome React</Link></ListItem>
+                  <ListItem textSize={thankyouListTextSize}><Link href="https://github.com/chentsulin/awesome-graphql">Awseome GraphQL</Link></ListItem>
+                  <ListItem textSize={thankyouListTextSize}><Link href="https://app.moqups.com">Moqups</Link></ListItem>
                 </List>
               </Fill>
             </Layout> 
