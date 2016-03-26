@@ -1,24 +1,33 @@
-
 <!-- RESTFUL Query -->
 
-GET /users/1/friends/1/dogs/1?include=user.name,dog.age
-
+GET /hero/1/friends/1/dogs/1?include=user.name,dog.age
 
 <!-- GraphQL Query -->
-
 {
- user(id: 1) {
-   name
-   friends {
-     dogs {
-       name
-     }
-   }
- }
+  hero(id: 2001) {
+    id
+    name
+    friends {
+      id
+      name
+      dogs
+    }
+  }
 }
 
-<!-- GraphQL Query Mutations -->
+<!-- Response -->
+{
+  "data": {
+    "hero": {
+      "id": "2001",
+      "name": "R2-D2",
+      "friends": [
+        { "id": "1000", "name": "Luke Skywalker", "dogs": [] },
+        { "id": "1002","name": "Han Solo", "dogs": [] },
+        { "id": "1003", "name": "Leia Organa", "dogs": [] }
+      ]}}}
 
+<!-- GraphQL Query Mutations -->
 mutation updateUser($userId: String! $name: String!) {  
   updateUser(id: $userId name: $name) {
     name

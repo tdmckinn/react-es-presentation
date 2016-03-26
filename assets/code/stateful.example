@@ -23,7 +23,7 @@ class Story extends React.Component {
           <label htmlFor="name">Enter your name: </label>
           <input type="text" id="name" />
         </div>
-        <button onClick={this.onClick}>this.state.message</button>
+        <button onClick={this.onClick}>{this.state.message}</button>
         <p>Enter your HTML here</p>
       </div>
     );
