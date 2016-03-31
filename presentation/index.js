@@ -75,11 +75,11 @@ export default class Presentation extends React.Component {
                 <li>Relay</li>
                 <li>GraphQL</li>
                 <li>Flow</li>
-                <li>APP DEMO!!!</li>
+                *<li>APP DEMO!!!</li>
               </ol>
             </div>
           </Slide>
-          <Slide transition={["zoom"]} bgColor="black" bgImage={gifs.idea}>
+          <Slide transition={["zoom"]} bgColor="black" bgImage={gifs.happy}>
           </Slide>
           {/*<Slide transition={["zoom"]} bgColor="black" bgImage={gifs.rockets}>
           </Slide>*/}
@@ -87,6 +87,7 @@ export default class Presentation extends React.Component {
             <Heading size={1} caps textColor="primary" textFont="primary">
               ReactJS
             </Heading>
+            <Text> UI data & rendering </Text>
           </Slide>
           <Slide transition={["slide"]} bgColor="black">
            <Layout>
@@ -108,7 +109,7 @@ export default class Presentation extends React.Component {
           </Layout> 
           </Slide>
           <Slide transition={["slide"]} bgColor="black">
-            <Text textColor="white">Container / Functional / Pure / Impure </Text>
+            <Text textColor="white">Container / Presentational / Functional / Pure / Impure </Text>
             <Layout>
               <Fill>
                 <CodePane
@@ -134,10 +135,12 @@ export default class Presentation extends React.Component {
             <Text textColor="white">Efficient diff algorithms.
             Batching DOM read/write operations.
             Efficient update of sub-tree only.</Text>
-          </Slide>          
+          </Slide>
+          <Slide transition={["zoom"]} bgColor="black" bgImage={gifs.idea}>
+          </Slide>     
           <Slide transition={["zoom", "fade"]} bgImage={images.city.replace("/", "")} bgDarken={0.85}>
             <Heading size={4} caps textColor="secondary" bgColor="white" margin={10}>
-              What is GraphQL?
+              What is GraphQL? Single API endpoint data retrieval 
             </Heading>
             <Layout>
               <Fill>
@@ -157,8 +160,8 @@ export default class Presentation extends React.Component {
             </Layout>
           </Slide>
           <Slide transition={["slide"]} bgColor="black">
-            <Heading size={1} caps textColor="primary" textFont="primary">
-              GraphQL Getting Started...
+            <Heading size={1} textColor="primary" textFont="primary">
+               Getting Started...
             </Heading>
             <List textColor="white">
               <ListItem>A GraphQL Schema: A description of your data model with an associated set of resolve methods that know how to fetch any data your application could ever need.</ListItem>
@@ -180,21 +183,16 @@ export default class Presentation extends React.Component {
           </Slide>
           <Slide transition={["slide"]} bgColor="black">
            <Heading size={4} caps textColor="secondary" bgColor="white" margin={10}>
-              What is Relay?
+              What is Relay? React Component data declartion & co-location
             </Heading>
             <Layout>
               <Fill>
-                  <Text textColor="white">GraphQL is a query language created by Facebook in 2012 which provides a common interface between the client and the server for data fetching and manipulations.
-                  </Text>
-              </Fill>
-              <Fill>
-                <Text textColor="white">Key concepts of the GraphQL query language are:</Text>
+                <Text textColor="white">Key concepts of the Relay are:</Text>
                 <List textColor="white">
-                  <ListItem>Hierarchical</ListItem>
-                  <ListItem>Product‐centric</ListItem>
-                  <ListItem>Strong‐typing</ListItem>
-                  <ListItem>Client‐specified queries</ListItem>
-                  <ListItem>Introspective</ListItem>
+                  <ListItem>Declartive</ListItem>
+                  <ListItem>Colocation</ListItem>
+                  <ListItem>Mutations</ListItem>
+                  <ListItem>Auto-fetch, Caching, Error handling</ListItem>
                 </List>
               </Fill>
             </Layout>

@@ -7,7 +7,7 @@ const Story = (props) => (
       <label htmlFor="name">Enter your name: </label>
       <input type="text" id="name" />
     </div>
-    <p>Enter your HTML here</p>
+    <p>Enter your HTML here: {props.name}/p>
   </div>
 );
 
