@@ -16,25 +16,25 @@ require('normalize.css');
 require('spectacle/lib/themes/default/index.css');
 
 const images = {
-  city: require('../assets/city.jpg'),
-  kat: require('../assets/kat.png'),
-  logo: require('../assets/formidable-logo.svg'),
-  markdown: require('../assets/markdown.png'),
-  reactLogo: require('../assets/reactjs-logo.svg'),
-  reactEco: require('../assets/react-eco.png'),
-  reactPic: require('../assets/reactpic.jpeg'),
-  facebook: require('../assets/facebook.png'),
-  airbnb: require('../assets/airbnb.png'),
-  dropbox: require('../assets/dropbox.png'),
-  flowType: require('../assets/flow-hero-logo.png'),
-  jurrasicWave: require('../assets/jurrasic-wave-v1.png')
+  city: require('../assets/images/city.jpg'),
+  kat: require('../assets/images/kat.png'),
+  logo: require('../assets/images/formidable-logo.svg'),
+  markdown: require('../assets/images/markdown.png'),
+  reactLogo: require('../assets/images/reactjs-logo.svg'),
+  reactEco: require('../assets/images/react-eco.png'),
+  reactPic: require('../assets/images/reactpic.jpeg'),
+  facebook: require('../assets/images/facebook.png'),
+  airbnb: require('../assets/images/airbnb.png'),
+  dropbox: require('../assets/images/dropbox.png'),
+  flowType: require('../assets/images/flow-hero-logo.png'),
+  jurrasicWave: require('../assets/images/jurrasic-wave-v1.png')
 };
 
 const gifs = {
-  rockets: require('../assets/rockets.gif'),
-  easter: require('../assets/easterhomer.gif'),
-  happy: require('../assets/happy.gif'),
-  idea: require('../assets/idea.gif')
+  rockets: require('../assets/gifs/rockets.gif'),
+  easter: require('../assets/gifs/easterhomer.gif'),
+  happy: require('../assets/gifs/happy.gif'),
+  idea: require('../assets/gifs/idea.gif')
 }
 
 preloader(images);
