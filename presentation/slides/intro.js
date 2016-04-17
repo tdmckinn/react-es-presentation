@@ -18,15 +18,15 @@ const gifs = {
 }
 
 const IntroSlides = [
-  (<Slide transition={["zoom"]} bgColor="black" bgImage={images.reactEco} bgDarken={0.75}>
+  <Slide transition={["zoom"]} bgColor="black" bgImage={images.reactEco} bgDarken={0.75}>
     <Heading size={2} fit caps lineHeight={2} textColor="white">
       The ReactJS Ecosystem
     </Heading>
     <Heading size={1} fit>
-      ReactJS, Relay, GraphQL, Flow, Redux, & (Babel)
+      ReactJS, Relay, GraphQL, Redux, & (Babel)
     </Heading>
-  </Slide>),
-  (<Slide bgColor="black">
+  </Slide>,
+  <Slide bgColor="black">
     <BlockQuote>
       <Quote>
       If you think you need to be an expert about something to 
@@ -34,8 +34,8 @@ const IntroSlides = [
       </Quote>
       <Cite>@getify #FluentConf</Cite>
     </BlockQuote>
-  </Slide>),
-  (<Slide transition={["slide"]} bgColor="black" notes="You can even put notes on your slide. How awesome is that?">
+  </Slide>,
+  <Slide transition={["slide"]} bgColor="black" notes="You can even put notes on your slide. How awesome is that?">
     <Heading size={1} caps textColor="primary" textFont="primary">
       Agenda
     </Heading>
@@ -48,12 +48,7 @@ const IntroSlides = [
         *<li>APP DEMO!!!</li>
       </ol>
     </div>
-  </Slide>),
-  (<Slide transition={["zoom"]} bgColor="black" bgImage={gifs.happy}>
-  </Slide>)
+  </Slide>
 ];
 
 export default IntroSlides;
-
- /* {/*<Slide transition={["zoom"]} bgColor="black" bgImage={gifs.rockets}>
-  </Slide>} */

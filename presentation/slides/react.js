@@ -24,7 +24,7 @@ const ReactSlides = [
     <Fill>
       <CodePane
         lang="jsx"
-        source={require("raw!../assets/code/html-jsx.example")}
+        source={require("raw!../../assets/code/html-jsx.example")}
         margin="20px 1px"
       />
     <Text><Link textColor="primary" href="https://babeljs.io/repl/"> JSX to JS Transformer</Link></Text>
@@ -32,26 +32,26 @@ const ReactSlides = [
     <Fill>
       <CodePane
         lang="jsx"
-        source={require("raw!../assets/code/jsx-js.example")}
+        source={require("raw!../../assets/code/jsx-js.example")}
         margin="20px 9px"
       />
     </Fill>
     </Layout> 
   </Slide>,
   <Slide transition={["slide"]} bgColor="black">
-    <Text textColor="white">Container / Presentational / Functional / Pure / Impure </Text>
+    <Text textColor="white">Container / Presentational / Functional </Text>
     <Layout>
       <Fill>
         <CodePane
           lang="jsx"
-          source={require("raw!../assets/code/stateful.example")}
+          source={require("raw!../../assets/code/stateful.example")}
           margin="20px 1px"
         />
       </Fill>
       <Fill>
         <CodePane
           lang="jsx"
-          source={require("raw!../assets/code/stateless.example")}
+          source={require("raw!../../assets/code/stateless.example")}
           margin="20px 9px"
         />
     </Fill>

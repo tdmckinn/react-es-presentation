@@ -1,5 +1,4 @@
 <!-- Stateless Components -->
-
 const Story = (props) => (
   <div>
     {/* Hello world */}

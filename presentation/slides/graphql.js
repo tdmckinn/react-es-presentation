@@ -50,7 +50,7 @@ const GraphQLSlides = [
       <Fill>
         <CodePane
           lang="jsx"
-          source={require("raw!../assets/code/graphQL.example")}
+          source={require("raw!../../assets/code/graphQL.example")}
           margin="20px 1px"
         />
       </Fill>
