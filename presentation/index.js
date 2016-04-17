@@ -52,28 +52,24 @@ export default class Presentation extends React.Component {
     return (
       <Spectacle theme={theme}>
         <Deck transition={["zoom", "slide"]} transitionDuration={500}>
-          {IntroSlides}
+          { React.Children.toArray( [IntroSlides,
           <Slide transition={["zoom"]} bgColor="black" bgImage={gifs.happy}>
-          </Slide>
-          {/*<Slide transition={["zoom"]} bgColor="black" bgImage={gifs.rockets}>
-          </Slide>*/}
-          {ReactSlides}
+          </Slide>,
+          ReactSlides,
           <Slide transition={["zoom"]} bgColor="black" bgImage={gifs.idea}>
-          </Slide>     
-          {GraphQLSlides} 
-          {/*<Slide transition={["slide"]} bgColor="primary" bgImage={images.flowType.replace("/", "")} bgDarken={0.85}>
-          </Slide>*/}        
+          </Slide>,  
+          GraphQLSlides,  
           <Slide transition={["zoom"]} bgColor="black" >
             <Heading size={1} textColor="tertiary">
               App Demo...
             </Heading>
             <img src={images.jurrasicWave.replace("/", "") } style={{maxWidth: 800}} />
-          </Slide>
+          </Slide>,
           <Slide>
            <div>
            Pros & Cons
            </div>
-          </Slide>
+          </Slide>,
           <Slide transition={["zoom"]} bgColor="black">
             <Heading size={1} caps fit textColor="tertiary">
               Honoroable Mentions...
@@ -84,8 +80,9 @@ export default class Presentation extends React.Component {
               <ListItem>Typescript</ListItem>
               <ListItem>Faclorjs By Netflix</ListItem>
             </List>
-          </Slide>
-          {ConclusionSlides}
+          </Slide>,
+          ConclusionSlides
+          ])} 
         </Deck>
       </Spectacle>
     );
