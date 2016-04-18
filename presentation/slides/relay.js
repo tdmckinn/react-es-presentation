@@ -11,8 +11,9 @@ import {
 const RelaySlides = [
   <Slide transition={["slide"]} bgColor="black">
     <Heading size={4} caps textColor="secondary" bgColor="white" margin={10}>
-      What is Relay? React Component data declartion & co-location
+      What is Relay? 
     </Heading>
+    <Text textColor="#fff">React Component data declartion & co-location</Text>
     <Layout>
       <Fill>
         <Text textColor="white">Key concepts of the Relay are:</Text>
@@ -26,7 +27,7 @@ const RelaySlides = [
     </Layout>
   </Slide>,
     <Slide transition={["slide"]} bgColor="black">
-    <Text textColor="white">Relay Example </Text>
+    <Text textColor="white">Relay Example</Text>
     <Layout>
       <Fill>
         <CodePane

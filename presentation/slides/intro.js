@@ -42,10 +42,11 @@ const IntroSlides = [
     <div style={{color: '#fff'}}>
       <ol>
         <li>React JS</li>
-        <li>Relay</li>
         <li>GraphQL</li>
-        <li>Flow</li>
-        *<li>APP DEMO!!!</li>
+        <li>Relay</li>
+        <li>Redux</li>
+        <li>APP DEMO!!!</li>
+        <li>Honorable Mentions</li>
       </ol>
     </div>
   </Slide>

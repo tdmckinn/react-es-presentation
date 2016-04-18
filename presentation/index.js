@@ -58,7 +58,9 @@ export default class Presentation extends React.Component {
           ReactSlides,
           <Slide transition={["zoom"]} bgColor="black" bgImage={gifs.idea}>
           </Slide>,  
-          GraphQLSlides,  
+          GraphQLSlides,
+          RelaySlides,  
+          ReduxSlides,
           <Slide transition={["zoom"]} bgColor="black" >
             <Heading size={1} textColor="tertiary">
               App Demo...

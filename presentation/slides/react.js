@@ -17,7 +17,7 @@ const ReactSlides = [
     <Heading size={1} caps textColor="primary" textFont="primary">
       ReactJS
     </Heading>
-    <Text> UI data & rendering </Text>
+    <Text textColor="#fff"> UI data & rendering </Text>
   </Slide>,
   <Slide transition={["slide"]} bgColor="black">
     <Layout>

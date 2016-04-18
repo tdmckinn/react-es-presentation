@@ -55,6 +55,26 @@ const GraphQLSlides = [
         />
       </Fill>
     </Layout> 
+  </Slide>,
+  <Slide>
+    <Heading size={4} caps textColor="primary" bgColor="black" margin={10}>Pagination & Connections & Edges</Heading>
+    <div>
+      More powerful and flexible than simple lists.
+      Support pagination (forward and back), with cursors.
+      Fine-grained mutation support (eg. RANGE_ADD, RANGE_DELETE, NODE_DELETE, as described in the guide).
+      Requires a first or last argument in order to limit the size of the result set.
+      Has an edges field that provides a place to locate per-edge, edge-specific data.
+      A heavier-weight concept, requiring more work to define in the schema.
+      Lists
+      Simple and lightweight.
+      No support for pagination (the entire list is always returned).
+      No special mutations features for prepending, appending etc (although it is a requested feature).
+      Which to use?
+      Whenever you need pagination, you should use a connection.
+      If you need fine-grained control over mutations, you may choose to use a connection, even if you don't need pagination.
+      If you want all the items in a connection, you can use first with some large number.
+      If you want to expose a short list with minimal effort, use a simple list.
+    </div>
   </Slide>
 ];
 
