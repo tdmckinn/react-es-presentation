@@ -1,12 +1,11 @@
-import React from "react";
 
-import { 
-  Appear, BlockQuote, Cite, 
-  CodePane, Deck, Fill, Heading, 
-  Image, Layout, Link, ListItem, 
-  List, Markdown, Quote, Slide,
-  Spectacle, Text
-} from "spectacle";
+import React from 'react';
+
+import {
+  CodePane, Fill, Heading,
+  Layout, ListItem, Text,
+  List, Slide
+} from 'spectacle';
 
 const images = {
   city: require('../../assets/images/city.jpg'),
@@ -14,20 +13,21 @@ const images = {
 };
 
 const GraphQLSlides = [
-  <Slide transition={["zoom", "fade"]} bgImage={images.graphQL.replace("/", "")} bgDarken={0.75} notes="<ul><li>talk about that</li><li>and that</li></ul>">
+  <Slide transition={['zoom', 'fade']} bgImage={images.graphQL.replace('/', '')} bgDarken={0.75} notes="<ul><li>talk about that</li><li>and that</li></ul>">
     <Heading size={1} caps textColor="primary" textFont="primary">
       GraphQL
     </Heading>
     <Text textColor="#fff">A DATA QUERY LANGUAGE AND RUNTIME </Text>
   </Slide>,
-  <Slide transition={["zoom", "fade"]} bgImage={images.city.replace("/", "")} bgDarken={0.85}>
+  <Slide transition={['zoom', 'fade']} bgImage={images.city.replace('/', '')} bgDarken={0.85}>
     <Heading size={4} caps textColor="secondary" bgColor="white" margin={10}>
-      What is GraphQL? Single API endpoint data retrieval 
+      What is GraphQL? Single API endpoint data retrieval
     </Heading>
     <Layout>
       <Fill>
-          <Text textColor="white">GraphQL is a query language created by Facebook in 2012 which provides a common interface between the client and the server for data fetching and manipulations.
-          </Text>
+        <Text textColor="white">
+          GraphQL is a query language created by Facebook in 2012 which provides a common interface between the client and the server for data fetching and manipulations.
+        </Text>
       </Fill>
       <Fill>
         <Text textColor="white">Key concepts of the GraphQL query language are:</Text>
@@ -41,7 +41,7 @@ const GraphQLSlides = [
       </Fill>
     </Layout>
   </Slide>,
-  <Slide transition={["slide"]} bgColor="black">
+  <Slide transition={['slide']} bgColor="black">
     <Heading size={1} textColor="primary" textFont="primary">
         Getting Started...
     </Heading>
@@ -51,17 +51,17 @@ const GraphQLSlides = [
       <ListItem>Relay: Relay speaks to GraphQL servers through a network layer. The network layer that ships with Relay is compatible with express-graphql out of the box, and will continue to evolve as we add new features to the transport.</ListItem>
     </List>
   </Slide>,
-  <Slide transition={["slide"]} bgColor="black">
+  <Slide transition={['slide']} bgColor="black">
     <Text textColor="white">GrahpQL Example </Text>
     <Layout>
       <Fill>
         <CodePane
           lang="jsx"
-          source={require("raw!../../assets/code/graphQL.example")}
+          source={require('raw!../../assets/code/graphQL.example')}
           margin="20px 1px"
         />
       </Fill>
-    </Layout> 
+    </Layout>
   </Slide>,
   <Slide>
     <Heading size={4} caps textColor="primary" bgColor="black" margin={10}>Pagination & Connections & Edges</Heading>

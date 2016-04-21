@@ -1,17 +1,15 @@
-import React from "react";
+import React from 'react';
 
-import { 
-  Appear, BlockQuote, Cite, 
-  CodePane, Deck, Fill, Heading, 
-  Image, Layout, Link, ListItem, 
-  List, Markdown, Quote, Slide,
-  Spectacle, Text
-} from "spectacle";
+import {
+  Fill, Heading, Text,
+  Layout, Link, ListItem,
+  List, Slide
+} from 'spectacle';
 
 const thankyouListTextSize = '26px';
 
 const ConclusionSlides = [
-  <Slide transition={["spin", "slide"]} bgColor="primary">
+  <Slide transition={['spin', 'slide']} bgColor="primary">
     <Heading size={1} caps lineHeight={1} textColor="white">
       Thank You
     </Heading>
@@ -57,7 +55,7 @@ const ConclusionSlides = [
             <Link href="https://app.moqups.com">Moqups</Link></ListItem>
         </List>
       </Fill>
-    </Layout> 
+    </Layout>
   </Slide>
 ];
 

@@ -1,5 +1,5 @@
 {
-  "extends": "reactjs",
+  "extends": "airbnb",
   "parserOptions": {
     "ecmaVersion": 6,
     "ecmaFeatures": {
@@ -20,7 +20,8 @@
     "react/wrap-multilines": 2,
     "no-alert": 0,
     "indent": [2, 2],
-    "no-console": 1
+    "no-console": 1,
+    "comma-dangle": 0
   },
   "plugins": [
     "react"
