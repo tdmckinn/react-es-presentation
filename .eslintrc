@@ -14,9 +14,11 @@
     "es6": true
   },
   "rules": {
+    "jsx-no-literals": 0,
     "react/jsx-uses-react": 1,
     "react/jsx-no-undef": 2,
     "react/wrap-multilines": 2,
+    "no-alert": 0,
     "indent": [2, 2],
     "no-console": 1
   },

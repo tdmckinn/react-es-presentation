@@ -22,9 +22,9 @@ const ConclusionSlides = [
           <ListItem textSize={thankyouListTextSize}>
             <Link href="https://github.com/tdmckinn/jurastic-waves">Jurrasic Waves</Link></ListItem>
           <ListItem textSize={thankyouListTextSize}>
-            <Link href="http://www.formidablelabs.com">Github: @tdmckinn</Link></ListItem>
+            <Link href="https://github.com/tdmckinn">Github: @tdmckinn</Link></ListItem>
           <ListItem textSize={thankyouListTextSize}>
-            <Link href="http://www.formidablelabs.com">Twitter: @TirellMckinnon</Link></ListItem>
+            <Link href="https://twitter.com/TirellMckinnon">Twitter: @TirellMckinnon</Link></ListItem>
         </List>
       </Fill>
       <Fill>
@@ -37,7 +37,7 @@ const ConclusionSlides = [
           <ListItem textSize={thankyouListTextSize}>
             <Link href="http://graphql.org/">GraphQL</Link></ListItem>
           <ListItem textSize={thankyouListTextSize}>
-            <Link href="http://flowtype.org/">Flow</Link></ListItem>
+            <Link href="http://flowtype.org/">Redux</Link></ListItem>
           <ListItem textSize={thankyouListTextSize}>
             <Link href="https://github.com/FormidableLabs/spectacle">Spectacle Presentation Library</Link></ListItem>
           <ListItem textSize={thankyouListTextSize}>

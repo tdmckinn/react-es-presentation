@@ -9,10 +9,17 @@ import {
 } from "spectacle";
 
 const images = {
-  city: require('../../assets/images/city.jpg')
+  city: require('../../assets/images/city.jpg'),
+  graphQL: require('../../assets/images/graphql.svg')
 };
 
 const GraphQLSlides = [
+  <Slide transition={["zoom", "fade"]} bgImage={images.graphQL.replace("/", "")} bgDarken={0.75} notes="<ul><li>talk about that</li><li>and that</li></ul>">
+    <Heading size={1} caps textColor="primary" textFont="primary">
+      GraphQL
+    </Heading>
+    <Text textColor="#fff">A DATA QUERY LANGUAGE AND RUNTIME </Text>
+  </Slide>,
   <Slide transition={["zoom", "fade"]} bgImage={images.city.replace("/", "")} bgDarken={0.85}>
     <Heading size={4} caps textColor="secondary" bgColor="white" margin={10}>
       What is GraphQL? Single API endpoint data retrieval 

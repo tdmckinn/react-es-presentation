@@ -6,8 +6,8 @@ import {
   CodePane, Deck, Fill, Heading, 
   Image, Layout, Link, ListItem, 
   List, Markdown, Quote, Slide,
-  Spectacle, Text
-} from "spectacle";
+  Spectacle, Text 
+} from "spectacle"; 
 import preloader from "spectacle/lib/utils/preloader";
 import createTheme from "spectacle/lib/themes/default";
 
@@ -15,22 +15,14 @@ import { IntroSlides, ConclusionSlides,
   ReactSlides, RelaySlides, ReduxSlides, GraphQLSlides  } from './slides';
 //import Interactive from "../src/interactive";
 
-// Require CSS
-require('normalize.css');
+//Require CSS 
+require('normalize.css'); 
 require('spectacle/lib/themes/default/index.css');
 
 const images = {
-  city: require('../assets/images/city.jpg'),
-  kat: require('../assets/images/kat.png'),
-  logo: require('../assets/images/formidable-logo.svg'),
-  markdown: require('../assets/images/markdown.png'),
-  reactLogo: require('../assets/images/reactjs-logo.svg'),
-  reactEco: require('../assets/images/react-eco.png'),
-  reactPic: require('../assets/images/reactpic.jpeg'),
   facebook: require('../assets/images/facebook.png'),
   airbnb: require('../assets/images/airbnb.png'),
   dropbox: require('../assets/images/dropbox.png'),
-  flowType: require('../assets/images/flow-hero-logo.png'),
   jurrasicWave: require('../assets/images/jurrasic-wave-v1.png')
 };
 
