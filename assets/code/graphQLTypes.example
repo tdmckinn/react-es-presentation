@@ -1,0 +1,21 @@
+
+const UserType = new GraphQLObjectType({
+  name : 'User',
+  fields : {
+    username : { type : GraphQLString }
+  }
+});
+
+const MovieType = new GraphQLObjectType({
+  name : 'Movie',
+  fields : {
+    director : { type : GraphQLString }
+  }
+});
+
+const BookType = new GraphQLObjectType({
+  name : 'Book',
+  fields : {
+    author : { type : GraphQLString }
+  }
+});

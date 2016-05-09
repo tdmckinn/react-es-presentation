@@ -6,11 +6,13 @@ import {
   Layout, Fill, List, ListItem
 } from 'spectacle';
 
+const images = {
+  reduxLogo: require('../../assets/images/reduxLogo.png')
+};
+
 const ReduxSlides = [
   <Slide transition={['zoom', 'fade']} bgColor="black">
-    <Heading size={4} caps textColor="secondary" bgColor="white" margin={10}>
-      Redux
-    </Heading>
+    <img src={images.reduxLogo.replace('/', '') } />
     <Text textColor="#fff">Client Side State Management</Text>
   </Slide>,
   <Slide transition={['zoom', 'fade']} bgColor="black" bgDarken={0.85}>
@@ -27,7 +29,18 @@ const ReduxSlides = [
         </List>
       </Fill>
     </Layout>
-  </Slide>
+  </Slide>,
+  <Slide>
+    <Heading> Why Redux ? </Heading>
+    <Text> Single Source of Truth, Testable, encorugages best practices in JS development, and provides
+     intergration to enable stat machines... </Text>
+  </Slide>,
+  <Slide>
+    <Heading> What's the learning curve ? Easy </Heading>
+  </Slide>,
+  <Slide>
+    <Heading> Well lets explore the API </Heading>
+  </SLide>
 ];
 
 export default ReduxSlides;

@@ -13,7 +13,12 @@ const images = {
 };
 
 const GraphQLSlides = [
-  <Slide transition={['zoom', 'fade']} bgImage={images.graphQL.replace('/', '')} bgDarken={0.75} notes="<ul><li>talk about that</li><li>and that</li></ul>">
+  <Slide
+    transition={['zoom', 'fade']} 
+    bgImage={images.graphQL.replace('/', '')} 
+    bgDarken={0.75} 
+    notes="<ul><li>talk about that</li><li>and that</li></ul>"
+  >
     <Heading size={1} caps textColor="primary" textFont="primary">
       GraphQL
     </Heading>
@@ -26,7 +31,8 @@ const GraphQLSlides = [
     <Layout>
       <Fill>
         <Text textColor="white">
-          GraphQL is a query language created by Facebook in 2012 which provides a common interface between the client and the server for data fetching and manipulations.
+          GraphQL is a query language created by Facebook in 2012
+          which provides a common interface between the client and the server for data fetching and manipulations.
         </Text>
       </Fill>
       <Fill>
@@ -46,9 +52,16 @@ const GraphQLSlides = [
         Getting Started...
     </Heading>
     <List textColor="white">
-      <ListItem>A GraphQL Schema: A description of your data model with an associated set of resolve methods that know how to fetch any data your application could ever need.</ListItem>
-      <ListItem>A GraphQL Server: Any server can be taught to load a schema and speak GraphQL</ListItem>
-      <ListItem>Relay: Relay speaks to GraphQL servers through a network layer. The network layer that ships with Relay is compatible with express-graphql out of the box, and will continue to evolve as we add new features to the transport.</ListItem>
+      <ListItem>
+        A GraphQL Schema: A description of your data model with an associated set of resolve
+        methods that know how to fetch any data your application could ever need.
+      </ListItem>
+      <ListItem>
+        A GraphQL Server: Any server can be taught to load a schema and speak GraphQL</ListItem>
+      <ListItem>Relay: Relay speaks to GraphQL servers through a network layer.
+        The network layer that ships with Relay is compatible with express-graphql out of the box,
+        and will continue to evolve as we add new features to the transport.
+      </ListItem>
     </List>
   </Slide>,
   <Slide transition={['slide']} bgColor="black">
@@ -57,14 +70,28 @@ const GraphQLSlides = [
       <Fill>
         <CodePane
           lang="jsx"
-          source={require('raw!../../assets/code/graphQL.example')}
+          source={require('raw!../../assets/code/graphQLRequest.example')}
+          margin="20px 1px"
+        />
+      </Fill>
+      <Fill>
+        <CodePane
+          lang="jsx"
+          source={require('raw!../../assets/code/graphQLResponse.example')}
           margin="20px 1px"
         />
       </Fill>
     </Layout>
   </Slide>,
   <Slide>
-    <Heading size={4} caps textColor="primary" bgColor="black" margin={10}>Pagination & Connections & Edges</Heading>
+    <Heading> Quick spill on List </Heading>
+    <Text> One of the most important things we deal with as developers day to day.</Text>
+  </Slide>,
+  <Slide>
+    <Heading size={4} caps textColor="primary"
+      bgColor="black"
+      margin={10}
+    > Pagination & Connections & Edges</Heading>
     <div>
       More powerful and flexible than simple lists.
       Support pagination (forward and back), with cursors.
@@ -75,14 +102,53 @@ const GraphQLSlides = [
       Lists
       Simple and lightweight.
       No support for pagination (the entire list is always returned).
-      No special mutations features for prepending, appending etc (although it is a requested feature).
+      No special mutations features for prepending, appending etc
+      (although it is a requested feature).
+    </div>
+  </Slide>,
+  <Slide>
+    <Heading size={4} caps textColor="primary"
+      bgColor="black"
+      margin={10}
+    > Pagination & Connections & Edges Cont...</Heading>
+    <div>
       Which to use?
       Whenever you need pagination, you should use a connection.
       If you need fine-grained control over mutations, you may choose to use a connection, even if you don't need pagination.
       If you want all the items in a connection, you can use first with some large number.
       If you want to expose a short list with minimal effort, use a simple list.
     </div>
-  </Slide>
+  </Slide>,
+  <Slide>
+    <Heading> Why GrahpQL ? </Heading>
+    <Text> See Key Concepts... </Text>
+  </Slide>,
+  <Slide>
+    <Heading> What's the learning curve ? Intermediate to Hard </Heading>
+  </Slide>,
+  <Slide>
+    <Heading> Well lets look at the API...</Heading>
+    <Text> GraphQL's Type system </Text>
+     <Layout>
+      <Fill>
+        <CodePane
+          lang="jsx"
+          source={require('raw!../../assets/code/graphQLInterfaces.example')}
+          margin="20px 1px"
+        />
+      </Fill>
+      <Fill>
+        <CodePane
+          lang="jsx"
+          source={require('raw!../../assets/code/graphQLTypes.example')}
+          margin="20px 9px"
+        />
+    </Fill>
+    </Layout>
+  </Slide>,
+  <Slide>
+    <Heading> Show the Tools! </Heading>
+  </Slide>,
 ];
 
 export default GraphQLSlides;

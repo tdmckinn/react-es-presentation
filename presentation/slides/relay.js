@@ -45,6 +45,16 @@ const RelaySlides = [
         />
       </Fill>
     </Layout>
+  </Slide>,
+  <Slide>
+    <Heading> Why Relay ? </Heading>
+    <Text> See Key Concepts... </Text>
+  </Slide>,
+  <Slide>
+    <Heading>What's the learning curve ? Hard... </Heading>
+  </Slide>,
+  <Slide>
+    <Heading>Well let look at the API...</Heading>
   </Slide>
 ];
 

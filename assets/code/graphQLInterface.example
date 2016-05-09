@@ -1,0 +1,23 @@
+
+interface Searchable {
+  searchPreviewText: String!
+} 
+
+type User implements Searchable {
+  searchPreviewText: String!
+  username: String!
+}
+
+type Movie implements Searchable {
+  searchPreviewText: String!
+  directory: String!
+}
+
+type Book implements Searchable {
+  searchPreviewText: String!
+  author: String!
+}
+
+type Query {
+  search(text: String!): [Searchable]!
+}

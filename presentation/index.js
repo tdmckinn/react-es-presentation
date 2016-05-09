@@ -1,7 +1,7 @@
 
 import React from 'react';
 
-// Import Spectacle Core tags
+
 import {
   Deck, Heading, ListItem,
   List, Slide, Spectacle
@@ -67,10 +67,11 @@ export default class Presentation extends React.Component {
                   Honoroable Mentions...
                 </Heading>
                 <List textColor="white">
-                  <ListItem>React Native</ListItem>
-                  <ListItem>Flow</ListItem>
-                  <ListItem>Typescript</ListItem>
-                  <ListItem>Faclorjs By Netflix</ListItem>
+                  <ListItem> React Native </ListItem>
+                  <ListItem> Flow </ListItem>
+                  <ListItem> Typescript </ListItem>
+                  <ListItem> Faclorjs By Netflix </ListItem>
+                  <ListItem> Applog Stack by the Meteorjs team </ListItem>
                 </List>
               </Slide>,
               ConclusionSlides
