@@ -51,10 +51,12 @@ const RelaySlides = [
     <Text> See Key Concepts... </Text>
   </Slide>,
   <Slide>
-    <Heading>What's the learning curve ? Hard... </Heading>
+    <Heading> What's the learning curve ? Hard... </Heading>
   </Slide>,
   <Slide>
-    <Heading>Well let look at the API...</Heading>
+    <Heading> Well let look at the API...</Heading>
+    <Text> Relay.createContainer </Text>
+    <Text> fragemnets </Text>
   </Slide>
 ];
 

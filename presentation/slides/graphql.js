@@ -4,7 +4,7 @@ import React from 'react';
 import {
   CodePane, Fill, Heading,
   Layout, ListItem, Text,
-  List, Slide
+  List, Slide, Markdown
 } from 'spectacle';
 
 const images = {
@@ -84,8 +84,55 @@ const GraphQLSlides = [
     </Layout>
   </Slide>,
   <Slide>
+    <Heading> Why GrahpQL ? </Heading>
+    <Text> See Key Concepts... </Text>
+  </Slide>,
+  <Slide>
+    <Heading> What's the learning curve ? Intermediate to Hard </Heading>
+  </Slide>,
+  <Slide>
+    <Heading> Well lets look at the API...</Heading>
+    <Text> GraphQL's Type system </Text>
+     <Layout>
+      <Fill>
+        <CodePane
+          lang="jsx"
+          source={require('raw!../../assets/code/graphQLInterface.example')}
+          margin="20px 1px"
+        />
+      </Fill>
+      <Fill>
+        <CodePane
+          lang="jsx"
+          source={require('raw!../../assets/code/graphQLTypes.example')}
+          margin="20px 9px"
+        />
+    </Fill>
+    </Layout>
+  </Slide>,
+  <Slide>
     <Heading> Quick spill on List </Heading>
     <Text> One of the most important things we deal with as developers day to day.</Text>
+  </Slide>,
+  <Slide>
+    <Heading> Pagination </Heading>
+      <Layout>
+        <Fill>
+          <Text> Different Types of pagination</Text>
+          <List>
+            <ListItem> Inifite Scroll </ListItem>
+            <ListItem> Sequential Pages </ListItem>
+            <ListItem> Numbered Pages </ListItem>
+          </List>
+        </Fill>
+        <Fill>
+          <Text> What is it for ?</Text>
+          <List>
+            <ListItem> Performance Concerns </ListItem>
+            <ListItem> UX Concerns </ListItem>
+          </List>
+      </Fill>
+    </Layout>
   </Slide>,
   <Slide>
     <Heading size={4} caps textColor="primary"
@@ -114,41 +161,28 @@ const GraphQLSlides = [
     <div>
       Which to use?
       Whenever you need pagination, you should use a connection.
-      If you need fine-grained control over mutations, you may choose to use a connection, even if you don't need pagination.
+      If you need fine-grained control over mutations, you may choose to use a connection, 
+      even if you don't need pagination.
       If you want all the items in a connection, you can use first with some large number.
       If you want to expose a short list with minimal effort, use a simple list.
     </div>
   </Slide>,
   <Slide>
-    <Heading> Why GrahpQL ? </Heading>
-    <Text> See Key Concepts... </Text>
-  </Slide>,
-  <Slide>
-    <Heading> What's the learning curve ? Intermediate to Hard </Heading>
-  </Slide>,
-  <Slide>
-    <Heading> Well lets look at the API...</Heading>
-    <Text> GraphQL's Type system </Text>
-     <Layout>
-      <Fill>
-        <CodePane
-          lang="jsx"
-          source={require('raw!../../assets/code/graphQLInterfaces.example')}
-          margin="20px 1px"
-        />
-      </Fill>
-      <Fill>
-        <CodePane
-          lang="jsx"
-          source={require('raw!../../assets/code/graphQLTypes.example')}
-          margin="20px 9px"
-        />
-    </Fill>
-    </Layout>
+    <Heading> Cursor Specification Key terms </Heading>
+     <Markdown>
+      {`
+        * A **connection** is a paginated field on an object — for example, the friends field on a user or the comments field on a blog post.</li>
+        * An **edge** has metadata about one object in the paginated list, and includes a cursor to allow pagination starting from that object..</li>
+        * A **node** represents the actual object you were looking for
+        * **pageInfo** lets the client know if there are more pages of data to fetch. In the Relay specification, it doesn’t tell you the total number of items, because the client cache doesn’t need that info. It would be up to the developer to expose that information through another field.
+        
+        -  [Apollo stack](https://medium.com/apollo-stack/understanding-pagination-rest-graphql-and-relay-b10f835549e7#.97kypxjtm)
+              `}
+      </Markdown>
   </Slide>,
   <Slide>
     <Heading> Show the Tools! </Heading>
-  </Slide>,
+  </Slide>
 ];
 
 export default GraphQLSlides;

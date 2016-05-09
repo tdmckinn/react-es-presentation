@@ -74,7 +74,7 @@ const ReactSlides = [
     <Heading> What's the learning curve ? Awseome </Heading>
   </Slide>,
   <Slide>
-    <Heading> Well let look at the API...</Heading>
+    <Heading> Well lets look at the API...</Heading>
     <Text> The Component Lifecycle</Text>
     <List textColor="white">
       <ListItem>componentWillMount – Fired once, before initial rendering occurs. 
@@ -117,6 +117,52 @@ const ReactSlides = [
     <Text textColor="white">Efficient diff algorithms.
     Batching DOM read/write operations.
     Efficient update of sub-tree only.</Text>
+  </Slide>,
+  <Slide>
+    <Heading size={4} caps textColor="secondary" bgColor="white" margin={10}>
+      Styling Techniques and or Options
+    </Heading>
+    <List>
+      <ListItem>Inline Styles</ListItem>
+      <ListItem>Require extract CSS</ListItem>
+      <ListItem>CSS Modlues</ListItem>
+    </List>
+  </Slide>,
+  <Slide transition={['slide']} bgColor="black">
+    <Text textColor="white"> Inline Styles @Radium </Text>
+    <Layout>
+      <Fill>
+        <CodePane
+          lang="jsx"
+          source={require('raw!../../assets/code/reactInlineStyles.example')}
+          margin="20px 1px"
+        />
+      </Fill>
+    </Layout>
+  </Slide>,
+  <Slide transition={['slide']} bgColor="black">
+    <Text textColor="white"> Require and Extraction </Text>
+    <Layout>
+      <Fill>
+        <CodePane
+          lang="jsx"
+          source={require('raw!../../assets/code/reactInlineStyles.example')}
+          margin="20px 1px"
+        />
+      </Fill>
+    </Layout>
+  </Slide>,
+  <Slide transition={['slide']} bgColor="black">
+    <Text textColor="white"> CSS Modules </Text>
+    <Layout>
+      <Fill>
+        <CodePane
+          lang="jsx"
+          source={require('raw!../../assets/code/reactInlineStyles.example')}
+          margin="20px 1px"
+        />
+      </Fill>
+    </Layout>
   </Slide>
 ];
 

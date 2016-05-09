@@ -32,15 +32,16 @@ const ReduxSlides = [
   </Slide>,
   <Slide>
     <Heading> Why Redux ? </Heading>
-    <Text> Single Source of Truth, Testable, encorugages best practices in JS development, and provides
-     intergration to enable stat machines... </Text>
+    <Text> Single Source of Truth, Testable, encorugages best practices in JS development,
+      and provides intergration to enable state machines... 
+    </Text>
   </Slide>,
   <Slide>
     <Heading> What's the learning curve ? Easy </Heading>
   </Slide>,
   <Slide>
-    <Heading> Well lets explore the API </Heading>
-  </SLide>
+    <Heading> Well lets look at the API... </Heading>
+  </Slide>
 ];
 
 export default ReduxSlides;

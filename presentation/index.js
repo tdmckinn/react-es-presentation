@@ -60,6 +60,7 @@ export default class Presentation extends React.Component {
               <Slide>
               <div>
               Pros & Cons
+              Why does this libs exsit ?
               </div>
               </Slide>,
               <Slide transition={['zoom']} bgColor="black">
