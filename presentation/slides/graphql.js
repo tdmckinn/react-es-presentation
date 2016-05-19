@@ -22,6 +22,8 @@ const GraphQLSlides = [
     bgImage={images.graphQL}
     bgColor="black"
     bgDarken={0.75}
+    bgSize="contain"
+    bgRepeat="no-repeat"
     notes="<ul><li>talk about that</li><li>and that</li></ul>"
   >
     <Heading size={1} caps textColor={lightPurple} textFont="primary">
@@ -54,7 +56,7 @@ const GraphQLSlides = [
     </Layout>
   </Slide>,
   <Slide transition={['zoom']} bgColor="black" >
-    <Heading size={1} textColor="tertiary">
+    <Heading size={4} textColor="tertiary">
       GraphQL Overview
     </Heading>
     <img src={images.graphQLOverview.replace('/', '') } style={{ maxWidth: 800 }} />
@@ -134,7 +136,7 @@ const GraphQLSlides = [
     <Heading size={4} textColor="tertiary">
       GraphQL vs REST
     </Heading>
-    <img src={images.rest_graphql.replace('/', '') } style={{ maxWidth: 800 }} />
+    <img src={images.rest_graphql.replace('/', '') } style={{ maxWidth: 800, maxHeight: 545 }} />
   </Slide>,
   <Slide bgColor="black" textFont="primary">
     <Heading textColor={lightPurple}> Quick spill on List </Heading>

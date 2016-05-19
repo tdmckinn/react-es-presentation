@@ -1,1 +1,18 @@
-<!-- Blank -->
+
+/* dino.css */
+.className {
+  color: green;
+}
+
+/* dino.js */
+
+import styles from "./dino.css";
+// import { className } from "./dino.css";
+
+element.innerHTML = '<div class="' + styles.className + '">';
+
+// Why ? Modular and reusable CSS!
+
+No more conflicts.
+Explicit dependencies.
+No global scope.

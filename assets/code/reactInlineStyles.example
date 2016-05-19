@@ -1,1 +1,15 @@
-<!-- Blank -->
+
+var dinoStyle = {
+  color: 'white',
+  backgroundImage: 'url(' + imgUrl + ')',
+  WebkitTransition: 'all', // note the capital 'W' here
+  msTransition: 'all' // 'ms' is the only lowercase vendor prefix
+};
+
+const DinoCard = () => (
+  <div style={dinoStyle}>
+    <stuff... 
+     ....
+      ....
+  <div>
+);

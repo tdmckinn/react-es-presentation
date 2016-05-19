@@ -144,13 +144,27 @@ const ReactSlides = [
   </Slide>,
   <Slide transition={['slide']} bgColor="black">
     <Heading size={4} caps textColor="secondary" bgColor="white" margin={10}>
-     Inline Styles @Radium
+     Inline Styles Default
     </Heading>
     <Layout>
       <Fill>
         <CodePane
           lang="jsx"
           source={require('raw!../../assets/code/reactInlineStyles.example')}
+          margin="20px 1px"
+        />
+      </Fill>
+    </Layout>
+  </Slide>,
+  <Slide transition={['slide']} bgColor="black">
+    <Heading size={4} caps textColor="secondary" bgColor="white" margin={10}>
+     Inline Styles @Radium
+    </Heading>
+    <Layout>
+      <Fill>
+        <CodePane
+          lang="jsx"
+          source={require('raw!../../assets/code/reactInlineStylesRd.example')}
           margin="20px 1px"
         />
       </Fill>

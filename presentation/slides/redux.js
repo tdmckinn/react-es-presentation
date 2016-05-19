@@ -9,7 +9,7 @@ import {
 const images = {
   reduxLogo: require('../../assets/images/redux.svg')
 };
-
+const purple = '#764ABC';
 const ReduxSlides = [
   <Slide
     transition={['zoom', 'fade']}
@@ -21,7 +21,7 @@ const ReduxSlides = [
     <Text textColor="#fff">Client Side State Management</Text>
   </Slide>,
   <Slide transition={['zoom', 'fade']} bgColor="black" bgDarken={0.85}>
-    <Heading size={4} caps textColor="secondary" bgColor="white" margin={10}>
+    <Heading size={4} caps textColor={purple} bgColor="white" margin={10}>
       What is Redux?
     </Heading>
     <Layout>
@@ -35,18 +35,18 @@ const ReduxSlides = [
       </Fill>
     </Layout>
   </Slide>,
-  <Slide>
+  <Slide bgColor={purple}>
     <Heading> Why Redux ? </Heading>
     <Text> Single Source of Truth, Testable, encorugages best practices in JS development,
       and provides intergration to enable state machines...
     </Text>
   </Slide>,
-  <Slide>
-    <Heading size={4} caps textColor="primary"
+  <Slide bgColor={purple}>
+    <Heading size={4} caps textColor={purple}
       bgColor="black"
     > What's the learning curve ? Easy </Heading>
   </Slide>,
-  <Slide>
+  <Slide bgColor={purple}>
     <Heading> Lets look at the API... </Heading>
   </Slide>
 ];

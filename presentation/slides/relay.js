@@ -17,6 +17,8 @@ const RelaySlides = [
     bgColor="black"
     bgImage={images.relayPic}
     bgDarken={0.75}
+    bgSize="contain"
+    bgRepeat="no-repeat"
     notes="<ul><li>talk about that</li><li>and that</li></ul>"
   >
     <Heading size={1} caps textColor={orange} textFont="primary">
