@@ -37,7 +37,9 @@ const ReduxSlides = [
     </Text>
   </Slide>,
   <Slide>
-    <Heading> What's the learning curve ? Easy </Heading>
+    <Heading size={4} caps textColor="primary"
+      bgColor="black"
+    > What's the learning curve ? Easy </Heading>
   </Slide>,
   <Slide>
     <Heading> Well lets look at the API... </Heading>

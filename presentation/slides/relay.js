@@ -11,7 +11,12 @@ const images = {
 };
 
 const RelaySlides = [
-  <Slide transition={['zoom', 'fade']} bgImage={images.relayPic.replace('/', '')} bgDarken={0.75} notes="<ul><li>talk about that</li><li>and that</li></ul>">
+  <Slide
+    transition={['zoom', 'fade']}
+    bgImage={images.relayPic.replace('/', '')}
+    bgDarken={0.75}
+    notes="<ul><li>talk about that</li><li>and that</li></ul>"
+  >
     <Heading size={1} caps textColor="primary" textFont="primary">
       Relay
     </Heading>
@@ -51,7 +56,8 @@ const RelaySlides = [
     <Text> See Key Concepts... </Text>
   </Slide>,
   <Slide>
-    <Heading> What's the learning curve ? Hard... </Heading>
+    <Heading size={4} caps textColor="primary"
+      bgColor="black"> What's the learning curve ? Hard... </Heading>
   </Slide>,
   <Slide>
     <Heading> Well let look at the API...</Heading>

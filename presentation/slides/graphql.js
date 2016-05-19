@@ -14,9 +14,9 @@ const images = {
 
 const GraphQLSlides = [
   <Slide
-    transition={['zoom', 'fade']} 
-    bgImage={images.graphQL.replace('/', '')} 
-    bgDarken={0.75} 
+    transition={['zoom', 'fade']}
+    bgImage={images.graphQL.replace('/', '')}
+    bgDarken={0.75}
     notes="<ul><li>talk about that</li><li>and that</li></ul>"
   >
     <Heading size={1} caps textColor="primary" textFont="primary">
@@ -32,7 +32,8 @@ const GraphQLSlides = [
       <Fill>
         <Text textColor="white">
           GraphQL is a query language created by Facebook in 2012
-          which provides a common interface between the client and the server for data fetching and manipulations.
+          which provides a common interface between the client and the server for data
+          fetching and manipulations.
         </Text>
       </Fill>
       <Fill>
@@ -91,7 +92,9 @@ const GraphQLSlides = [
     <Heading> What's the learning curve ? Intermediate to Hard </Heading>
   </Slide>,
   <Slide>
-    <Heading> Well lets look at the API...</Heading>
+    <Heading size={4} caps textColor="primary"
+      bgColor="black"
+    > Well lets look at the API...</Heading>
     <Text> GraphQL's Type system </Text>
      <Layout>
       <Fill>

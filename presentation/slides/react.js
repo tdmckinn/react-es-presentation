@@ -82,7 +82,7 @@ const ReactSlides = [
       </ListItem>
       <ListItem>componentDidMount – Fired once, after initial rendering occurs.
         Can use this.getDOMNode().
-      </ListItem>  
+      </ListItem>
       <ListItem>componentDidUpdate - Fired after the component's updates are made to the DOM.
         Can use this.getDOMNode() for updates.
       </ListItem>
@@ -103,7 +103,7 @@ const ReactSlides = [
   </Slide>,
   <Slide>
     <Heading>More on State...</Heading>
-    <Text> Default State aka Initial State</Text>
+    <Text> Default State aka Initial State </Text>
   </Slide>,
   <Slide>
     <Heading>More on State...</Heading>
@@ -129,7 +129,9 @@ const ReactSlides = [
     </List>
   </Slide>,
   <Slide transition={['slide']} bgColor="black">
-    <Text textColor="white"> Inline Styles @Radium </Text>
+    <Heading size={4} caps textColor="secondary" bgColor="white" margin={10}>
+     Inline Styles @Radium
+    </Heading>
     <Layout>
       <Fill>
         <CodePane
@@ -141,24 +143,28 @@ const ReactSlides = [
     </Layout>
   </Slide>,
   <Slide transition={['slide']} bgColor="black">
-    <Text textColor="white"> Require and Extraction </Text>
+    <Heading size={4} caps textColor="secondary" bgColor="white" margin={10}>
+    Require and Extraction
+    </Heading>
     <Layout>
       <Fill>
         <CodePane
           lang="jsx"
-          source={require('raw!../../assets/code/reactInlineStyles.example')}
+          source={require('raw!../../assets/code/reactRequireExtraction.example')}
           margin="20px 1px"
         />
       </Fill>
     </Layout>
   </Slide>,
   <Slide transition={['slide']} bgColor="black">
-    <Text textColor="white"> CSS Modules </Text>
+    <Heading size={4} caps textColor="secondary" bgColor="white" margin={10}>
+    CSS Modules
+    </Heading>
     <Layout>
       <Fill>
         <CodePane
           lang="jsx"
-          source={require('raw!../../assets/code/reactInlineStyles.example')}
+          source={require('raw!../../assets/code/reactCssModules.example')}
           margin="20px 1px"
         />
       </Fill>

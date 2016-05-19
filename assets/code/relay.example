@@ -1,6 +1,5 @@
 
 <!-- Relay Query -->
-
 const fragment = Relay.QL`
   fragment on User {
     name

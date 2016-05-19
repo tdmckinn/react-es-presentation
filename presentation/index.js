@@ -10,7 +10,7 @@ import preloader from 'spectacle/lib/utils/preloader';
 import createTheme from 'spectacle/lib/themes/default';
 
 import { IntroSlides, ConclusionSlides,
-  ReactSlides, RelaySlides, ReduxSlides, GraphQLSlides } from './slides';
+  ReactSlides, RelaySlides, ReduxSlides, GraphQLSlides, TestingSlides } from './slides';
 // import Interactive from "../src/interactive";
 
 // Require CSS
@@ -57,11 +57,10 @@ export default class Presentation extends React.Component {
                 </Heading>
                 <img src={images.jurrasicWave.replace('/', '') } style={{ maxWidth: 800 }} />
               </Slide>,
+              TestingSlides,
               <Slide>
-              <div>
-              Pros & Cons
-              Why does this libs exsit ?
-              </div>
+                <Heading>Pros & Cons</Heading>
+                 <Text>Why does this libs exsit ?</Text>
               </Slide>,
               <Slide transition={['zoom']} bgColor="black">
                 <Heading size={1} caps fit textColor="tertiary">

@@ -12,7 +12,7 @@ const images = {
 };
 
 const gifs = {
-  happy: require('../../assets/gifs/happy.gif') 
+  happy: require('../../assets/gifs/happy.gif')
 };
 
 const IntroSlides = [
@@ -33,7 +33,11 @@ const IntroSlides = [
       <Cite>@getify #FluentConf</Cite>
     </BlockQuote>
   </Slide>,
-  <Slide transition={['slide']} bgColor="black" notes="You can even put notes on your slide. How awesome is that?">
+  <Slide
+    transition={['slide']}
+    bgColor="black"
+    notes="You can even put notes on your slide. How awesome is that?"
+  >
     <Heading size={1} caps textColor="primary" textFont="primary">
       Agenda
     </Heading>
@@ -45,6 +49,19 @@ const IntroSlides = [
         <li>Redux</li>
         <li>APP DEMO!!!</li>
         <li>Honorable Mentions</li>
+      </ol>
+    </div>
+  </Slide>,
+  <Slide
+    transition={['slide']}
+    bgColor="black"
+  >
+    <Heading size={1} caps textColor="primary" textFont="primary">
+      Key Terms
+    </Heading>
+    <div style={{ color: '#fff' }}>
+      <ol>
+        <li>Higher Order Components</li>
       </ol>
     </div>
   </Slide>

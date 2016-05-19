@@ -4,24 +4,15 @@ var Story = React.createClass({
   displayName: "Story",
 
   render: function render() {
-    return React.createElement(
-      "div",
-      null,
-      React.createElement(
-        "div",
-        { className: "awesome", style: { border: '1px solid red' } },
-        React.createElement(
-          "label",
-          { htmlFor: "name" },
+    return React.createElement("div", null,
+      React.createElement("div", { className: "awesome", 
+        style: { border: '1px solid red' } },
+        React.createElement("label", { htmlFor: "name" },
           "Enter your name: "
         ),
         React.createElement("input", { type: "text", id: "name" })
       ),
-      React.createElement(
-        "p",
-        null,
-        "Enter your HTML here"
-      )
+      React.createElement("p", null, "Enter your HTML here" )
     );
   }
 });
