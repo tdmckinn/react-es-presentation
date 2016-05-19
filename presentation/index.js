@@ -3,7 +3,7 @@ import React from 'react';
 
 
 import {
-  Deck, Heading, ListItem,
+  Deck, Heading, ListItem, Text,
   List, Slide, Spectacle
 } from 'spectacle';
 import preloader from 'spectacle/lib/utils/preloader';
@@ -51,28 +51,16 @@ export default class Presentation extends React.Component {
               GraphQLSlides,
               RelaySlides,
               ReduxSlides,
+              TestingSlides,
+              <Slide>
+                <Heading> Pros & Cons </Heading>
+                 <Text> Why does this libs exsit ? </Text>
+              </Slide>,
               <Slide transition={['zoom']} bgColor="black" >
                 <Heading size={1} textColor="tertiary">
                   App Demo...
                 </Heading>
                 <img src={images.jurrasicWave.replace('/', '') } style={{ maxWidth: 800 }} />
-              </Slide>,
-              TestingSlides,
-              <Slide>
-                <Heading>Pros & Cons</Heading>
-                 <Text>Why does this libs exsit ?</Text>
-              </Slide>,
-              <Slide transition={['zoom']} bgColor="black">
-                <Heading size={1} caps fit textColor="tertiary">
-                  Honoroable Mentions...
-                </Heading>
-                <List textColor="white">
-                  <ListItem> React Native </ListItem>
-                  <ListItem> Flow </ListItem>
-                  <ListItem> Typescript </ListItem>
-                  <ListItem> Faclorjs By Netflix </ListItem>
-                  <ListItem> Applog Stack by the Meteorjs team </ListItem>
-                </List>
               </Slide>,
               ConclusionSlides
             ])

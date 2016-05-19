@@ -7,12 +7,17 @@ import {
 } from 'spectacle';
 
 const images = {
-  reduxLogo: require('../../assets/images/reduxLogo.png')
+  reduxLogo: require('../../assets/images/redux.svg')
 };
 
 const ReduxSlides = [
-  <Slide transition={['zoom', 'fade']} bgColor="black">
-    <img src={images.reduxLogo.replace('/', '') } />
+  <Slide
+    transition={['zoom', 'fade']}
+    bgImage={images.reduxLogo}
+    bgColor="black"
+    bgSize="contain"
+    bgRepeat="no-repeat"
+  >
     <Text textColor="#fff">Client Side State Management</Text>
   </Slide>,
   <Slide transition={['zoom', 'fade']} bgColor="black" bgDarken={0.85}>
@@ -33,7 +38,7 @@ const ReduxSlides = [
   <Slide>
     <Heading> Why Redux ? </Heading>
     <Text> Single Source of Truth, Testable, encorugages best practices in JS development,
-      and provides intergration to enable state machines... 
+      and provides intergration to enable state machines...
     </Text>
   </Slide>,
   <Slide>
@@ -42,7 +47,7 @@ const ReduxSlides = [
     > What's the learning curve ? Easy </Heading>
   </Slide>,
   <Slide>
-    <Heading> Well lets look at the API... </Heading>
+    <Heading> Lets look at the API... </Heading>
   </Slide>
 ];
 

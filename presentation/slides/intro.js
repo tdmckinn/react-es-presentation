@@ -1,11 +1,11 @@
 
-import React from "react";
+import React from 'react';
 
 // Import Spectacle Core tags
 import {
   BlockQuote, Cite, Heading,
-  Quote, Slide
-} from "spectacle";
+  Quote, Slide, Text
+} from 'spectacle';
 
 const images = {
   reactEco: require('../../assets/images/react-eco.png')
@@ -52,6 +52,13 @@ const IntroSlides = [
       </ol>
     </div>
   </Slide>,
+  <Slide bgColor="black">,
+    <Heading size={2} textColor="white"> Who's using these tools </Heading>
+    <Text textColor="white" textSize="2.0rem"> React - https://github.com/facebook/react/wiki/Sites-Using-React </Text>
+    <Text textColor="white" textSize="2.0rem"> Relay - https://github.com/facebook/relay/blob/master/USERS.md </Text>
+    <Text textColor="white" textSize="2.0rem"> GrahpQL - https://github.com/facebook/react/wiki/Sites-Using-React </Text>
+    <Text textColor="white" textSize="2.0rem"> Redux - https://github.com/reactjs/redux/issues/310 </Text>
+  </Slide>,
   <Slide
     transition={['slide']}
     bgColor="black"
@@ -61,7 +68,7 @@ const IntroSlides = [
     </Heading>
     <div style={{ color: '#fff' }}>
       <ol>
-        <li>Higher Order Components</li>
+        <li> Higher Order Components </li>
       </ol>
     </div>
   </Slide>

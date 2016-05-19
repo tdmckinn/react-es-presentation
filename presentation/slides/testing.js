@@ -13,7 +13,7 @@ const TestingSlides = [
     <Text textColor="white">Enzyme by Airbnb </Text>
     <Text textColor="white"> Assert chai-enyze.</Text>
     <Text textColor="white"> Jest by Facebook </Text>
-  </Slide>,
+  </Slide>
 ];
 
 export default TestingSlides;

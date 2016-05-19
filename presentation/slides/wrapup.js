@@ -9,6 +9,18 @@ import {
 const thankyouListTextSize = '26px';
 
 const ConclusionSlides = [
+  <Slide transition={['zoom']} bgColor="black">
+    <Heading size={1} caps fit textColor="tertiary">
+      Honoroable Mentions...
+    </Heading>
+    <List textColor="white">
+      <ListItem> React Native </ListItem>
+      <ListItem> Flow </ListItem>
+      <ListItem> Typescript </ListItem>
+      <ListItem> Faclorjs By Netflix </ListItem>
+      <ListItem> Apollo Stack by the Meteorjs team </ListItem>
+    </List>
+  </Slide>,
   <Slide transition={['spin', 'slide']} bgColor="primary">
     <Heading size={1} caps lineHeight={1} textColor="white">
       Thank You
@@ -57,7 +69,7 @@ const ConclusionSlides = [
       </Fill>
     </Layout>
   </Slide>,
-  <Slide>
+  <Slide transition={['spin', 'slide']} bgColor="black">
     <Heading> Questions ??? </Heading>
   </Slide>
 ];

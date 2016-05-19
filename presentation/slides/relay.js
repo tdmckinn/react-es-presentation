@@ -9,22 +9,24 @@ import {
 const images = {
   relayPic: require('../../assets/images/relay-logo.svg')
 };
+const orange = '#f26b00';
 
 const RelaySlides = [
   <Slide
     transition={['zoom', 'fade']}
-    bgImage={images.relayPic.replace('/', '')}
+    bgColor="black"
+    bgImage={images.relayPic}
     bgDarken={0.75}
     notes="<ul><li>talk about that</li><li>and that</li></ul>"
   >
-    <Heading size={1} caps textColor="primary" textFont="primary">
+    <Heading size={1} caps textColor={orange} textFont="primary">
       Relay
     </Heading>
     <Text textColor="#fff">A JAVASCRIPT FRAMEWORK FOR BUILDING DATA-DRIVEN REACT APPLICATIONS</Text>
   </Slide>,
   <Slide transition={['slide']} bgColor="black">
     <Heading size={4} caps textColor="secondary" bgColor="white" margin={10}>
-      What is Relay and Why Relay?
+      What is Relay ?
     </Heading>
     <Text textColor="#fff">React Component data declartion & co-location</Text>
     <Layout>
@@ -51,16 +53,17 @@ const RelaySlides = [
       </Fill>
     </Layout>
   </Slide>,
-  <Slide>
+  <Slide bgColor={orange}>
     <Heading> Why Relay ? </Heading>
     <Text> See Key Concepts... </Text>
   </Slide>,
-  <Slide>
-    <Heading size={4} caps textColor="primary"
-      bgColor="black"> What's the learning curve ? Hard... </Heading>
+  <Slide bgColor={orange}>
+    <Heading size={4} caps textColor="white"
+      bgColor="black"
+    > What's the learning curve ? Hard... </Heading>
   </Slide>,
-  <Slide>
-    <Heading> Well let look at the API...</Heading>
+  <Slide bgColor={orange}>
+    <Heading> Lets look at the API...</Heading>
     <Text> Relay.createContainer </Text>
     <Text> fragemnets </Text>
   </Slide>
