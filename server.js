@@ -10,6 +10,7 @@ var compiler = webpack(config);
 
 var serverPort = process.env.PORT || 3007;
 
+const ip =  process.env.IP || '0.0.0.0';
 
 if (process.env.NODE_ENV === 'development') {
 
@@ -28,7 +29,7 @@ app.get("*", function(req, res) {
   res.sendFile(path.join(__dirname, "public/index.html"));
 });
 
-app.listen(serverPort, "localhost", function (err) {
+app.listen(serverPort, ip, function (err) {
   if (err) {
     console.log(err);
     return;
