@@ -4,7 +4,7 @@ import React from 'react';
 import {
   CodePane, Fill, Heading,
   Layout, ListItem, Text,
-  List, Slide, Markdown
+  List, Slide, Markdown, Code
 } from 'spectacle';
 
 const images = {
@@ -14,8 +14,11 @@ const images = {
   rest_graphql: require('../../assets/images/rest_graphql.png'),
 
 };
+
+// Styles 
 const lightPurple = '#e535ab';
 const styleLightPurple = { color: lightPurple };
+const graphQLBorderBottom = { borderBottom: '1px solid black' };
 
 const GraphQLSlides = [
   <Slide
@@ -118,7 +121,49 @@ const GraphQLSlides = [
     <Heading size={4} caps textColor="black"
       bgColor="white"
     > Lets look at the API...</Heading>
-    <Text> GraphQL's Type system </Text>
+    <Layout>
+      <Fill>
+        <Text textColor="white"> GraphQL's Schema </Text>
+        <div style={{ color: 'white', backgroundColor: 'gray', marginTop: 20 }}>
+          <div style={graphQLBorderBottom}>
+            <span> schema - </span>
+            <span> GraphQL schema definition </span>
+          </div>
+          <div style={graphQLBorderBottom}>
+            <span> query - </span>
+            <span> A read only fetch operation </span>
+          </div>
+          <div style={graphQLBorderBottom}>
+            <span> mutation - </span>
+            <span> A write followed by a fetch operation </span>
+          </div>
+        </div>
+      </Fill>
+      <Fill>
+        <Text textColor="white"> Schema short Example </Text>
+        <CodePane
+          lang="jsx"
+          source={require('raw!../../assets/code/graphQLSchema.example')}
+          margin="20px 1px"
+        />
+      </Fill>
+    </Layout>
+  </Slide>,
+  <Slide bgColor="black">
+    <Heading size={4} caps textColor="black"
+      bgColor="white"
+    > GraphQL's Type system </Heading>
+    <List>
+      <ListItem> User Defined shapes and interfaces </ListItem>
+      <ListItem> Optional or required fields </ListItem>
+      <ListItem> Self documenting </ListItem>
+      <ListItem> Self </ListItem>
+    </List>
+  </Slide>,
+  <Slide bgColor="black">
+    <Heading size={4} caps textColor="black"
+      bgColor="white"
+    > GraphQL's Type system Example </Heading>
      <Layout>
       <Fill>
         <CodePane
@@ -144,7 +189,9 @@ const GraphQLSlides = [
   </Slide>,
   <Slide bgColor="black" textFont="primary">
     <Heading textColor={lightPurple}> Quick spill on List </Heading>
-    <Text textColor="white"> One of the most important things we deal with as developers day to day.</Text>
+    <Text textColor="white">
+      One of the most important things we deal with as developers day to day.
+    </Text>
   </Slide>,
   <Slide bgColor="black" textColor={lightPurple}>
     <Heading> Pagination </Heading>

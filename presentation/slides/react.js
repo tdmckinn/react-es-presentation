@@ -4,7 +4,7 @@ import React from 'react';
 import {
   CodePane, Fill, Heading,
   Layout, Link, Slide, List,
-  ListItem, Text
+  ListItem, Text, Code
 } from 'spectacle';
 
 const images = {
@@ -23,6 +23,15 @@ const ReactSlides = [
       ReactJS
     </Heading>
     <Text textColor="#fff"> UI data & rendering </Text>
+  </Slide>,
+  <Slide bgColor="black">
+    <Heading textColor={styleColor}> Ideology </Heading>
+    <List>
+      <ListItem> Functional Lite approach </ListItem>
+      <ListItem> Prefers Immutablity and protects against it </ListItem>
+      <ListItem> Components as functions / Encapsulation </ListItem>
+      <ListItem> One-way reactive data flow </ListItem>
+    </List>
   </Slide>,
   <Slide transition={['slide']} bgColor="black">
     <Layout>
@@ -112,7 +121,7 @@ const ReactSlides = [
   </Slide>,
   <Slide>
     <Heading> Why React ? </Heading>
-    <Text> Declarative, Predictable, Testable, & Reliability ++JavaScript </Text>
+    <Text> Simple, Declarative, Predictable, Testable, & Reliability ++JavaScript </Text>
   </Slide>,
   <Slide>
     <Heading> Declarative and Composable</Heading>

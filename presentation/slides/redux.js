@@ -19,7 +19,7 @@ const ReduxSlides = [
     bgSize="contain"
     bgRepeat="no-repeat"
   >
-    <Heading textColor="white" size={4}> Redux </Heading>
+    <Heading textColor={purple} size={4}> Redux </Heading>
     <Text textColor="#fff">Client Side State Management</Text>
   </Slide>,
   <Slide transition={['zoom', 'fade']} bgColor="black" bgDarken={0.85}>
@@ -37,9 +37,24 @@ const ReduxSlides = [
       </Fill>
     </Layout>
   </Slide>,
+  <Slide transition={['zoom', 'fade']} bgColor="black" bgDarken={0.85}>
+    <Heading size={4} caps textColor={purple} bgColor="white" margin={10}>
+      Let's explore Redux
+    </Heading>
+    <Layout>
+      <Fill>
+        <List textColor="white">
+          <ListItem> Actions </ListItem>
+          <ListItem> Reducers </ListItem>
+          <ListItem> Store </ListItem>
+          <ListItem> Dataflow </ListItem>
+        </List>
+      </Fill>
+    </Layout>
+  </Slide>,
   <Slide bgColor={purple}>
     <Heading> Why Redux ? </Heading>
-    <Text> Single Source of Truth, Testable, encorugages best practices in JS development,
+    <Text> Pure functions, Encorugages best practices in JS development, Dominiate flux varient,
       and provides integration to enable state machines...
     </Text>
   </Slide>,

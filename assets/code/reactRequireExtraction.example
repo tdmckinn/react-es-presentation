@@ -1,1 +1,15 @@
-<!-- Blank -->
+
+import React from 'react';
+
+import {
+  BlockQuote, Cite, Heading,
+  Quote, Slide, Text
+} from 'spectacle';
+
+require('!style!raw!sass!./introStyle.scss');
+
+const MyComponent = () => (
+  <div className="best-intro-style-ever-more-better">
+    <div className="best-intro--active> :) </div>
+  </div>
+);
