@@ -43,6 +43,19 @@ module.exports = {
     }, {
       test: /\.svg$/,
       loader: "url?limit=10000&mimetype=image/svg+xml"
+    }, {
+      test: /\.jpg$/,
+      loader: "url-loader?mimetype=image/jpg",
+      include: path.join(__dirname, "assets")
+    },{
+      test: /\.jpeg$/,
+      loader: "url-loader?mimetype=image/jpeg",
+      include: path.join(__dirname, "assets")
+    },
+    {
+      test: /\.gif$/,
+      loader: "url-loader?mimetype=image/gif",
+      include: path.join(__dirname, "assets")
     }]
   }
 };
