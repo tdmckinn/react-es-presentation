@@ -13,8 +13,8 @@ const images = {
   graphQLLogo: require('../../assets/images/graphql.svg'),
   reactLogo: require('../../assets/images/reactjs-logo.svg'),
   reduxLogo: require('../../assets/images/redux.svg'),
-  relayLogo: require('../../assets/images/relay-logo.svg')
-
+  relayLogo: require('../../assets/images/relay-logo.svg'),
+  babelLogo: require('../../assets/images/babel.svg')
 };
 
 const gifs = {
@@ -31,6 +31,7 @@ const IntroSlides = [
       <li><img src={images.reduxLogo} /></li>
       <li><img src={images.graphQLLogo} /></li>
       <li><img src={images.relayLogo} /></li>
+      <li><img src={images.babelLogo} className="babel-logo" /></li>
     </ul>
   </Slide>,
   <Slide bgColor="black">

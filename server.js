@@ -1,19 +1,17 @@
 /* eslint-disable */
 
-var path = require("path");
-var express = require("express");
-var webpack = require("webpack");
-var config = require("./webpack.config");
+const path = require("path");
+const express = require("express");
+const webpack = require("webpack");
+const config = require("./webpack.config");
 
-var app = express();
-var compiler = webpack(config);
+const app = express();
+const compiler = webpack(config);
 
-var serverPort = process.env.PORT || 3007;
-
+const serverPort = process.env.PORT || 3007;
 const ip =  process.env.IP || '0.0.0.0';
 
-if (process.env.NODE_ENV === 'development') {
-
+if (process.env.NODE_ENV === 'development' || typeof process.env.NODE_ENV === 'undefined') {
   app.use(require("webpack-dev-middleware")(compiler, {
     noInfo: true,
     publicPath: config.output.publicPath
