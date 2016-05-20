@@ -1,6 +1,6 @@
 
-import React, { Component } from "react";
-import { Heading } from "spectacle";
+import React, { Component } from 'react';
+import { Heading } from 'spectacle';
 import Iframe from 'react-iframe';
 
 export default class Interactive extends Component {
@@ -11,25 +11,25 @@ export default class Interactive extends Component {
     };
     this.handleClick = this.handleClick.bind(this);
   }
-  
+
   handleClick() {
     this.setState({
       count: this.state.count + 1
     });
   }
-  
+
   render() {
     const styles = {
       padding: 20,
-      background: "black",
+      background: 'black',
       minWidth: 300,
       marginTop: 20,
-      textTransform: "uppercase",
-      border: "none",
-      color: "white",
-      outline: "none",
-      fontWeight: "bold",
-      fontSize: "2em"
+      textTransform: 'uppercase',
+      border: 'none',
+      color: 'white',
+      outline: 'none',
+      fontWeight: 'bold',
+      fontSize: '2em'
     };
     return (
       <div>
