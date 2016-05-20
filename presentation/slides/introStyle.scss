@@ -10,7 +10,7 @@
 // Modified by: Tirell Mckinnon
 
 @mixin grayscale($scale) {
-  -webkit-filter: grayscale($scale); /* Chrome, Safari, Opera */
+  -webkit-filter: grayscale($scale);
   filter: grayscale($scale);
 }
 
@@ -58,45 +58,63 @@
     background-color: black;
     transition: .15s;
     
-    @extend %toggle-grayscale;
+    @extend %logo-animations;
   }
 }
 
 // Custom animations
-%toggle-grayscale {
-    -webkit-animation-name: grayscaleToggle;
-    -webkit-animation-duration: 2s;
-    -webkit-animation-timing-function: linear;
-    -webkit-animation-iteration-count: infinite;
-    //-webkit-animation-delay: 2s;
+%logo-animations {
+  -webkit-animation: grayscale-toggle 2s ease-in infinite, spin-logo 10s;
+  //-webkit-animation-delay: 2s;
 
-    -moz-animation-name: grayscaleToggle;
-    -moz-animation-duration: 2s;
-    -moz-animation-timing-function: linear;
-    -moz-animation-iteration-count: infinite;
-    //-moz-animation-delay: 2s;
+  -moz-animation-name: grayscale-toggle 2s ease-in infinite, spin-logo 10s;
+  //-moz-animation-delay: 2s;
 
-    animation-name: grayscaleToggle;
-    animation-duration: 2s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    //animation-delay: 2s;
+  animation-name: grayscale-toggle 2s ease-in infinite, spin-logo 10s;
+  //animation-delay: 2s;
 }
 
-@-moz-keyframes grayscaleToggle {  
-  0% { @include grayscale(100%);}
-  50% {  @include grayscale(0); }
+@-moz-keyframes grayscale-toggle {  
+  0% { @include grayscale(100%); }
+  50% { @include grayscale(0); }
   100% { @include grayscale(100%); }
 }
 
-@-webkit-keyframes grayscaleToggle {  
-  0% { @include grayscale(100%);}
-  50% {  @include grayscale(0); }
+@-webkit-keyframes grayscale-toggle {  
+  0% { @include grayscale(100%); }
+  50% { @include grayscale(0); }
   100% { @include grayscale(100%); }
 }
 
-@keyframes grayscaleToggle {  
-  0% { @include grayscale(100%);}
-  50% {  @include grayscale(0); }
+@keyframes grayscale-toggle {  
+  0% { @include grayscale(100%); }
+  50% { @include grayscale(0); }
   100% { @include grayscale(100%); }
+}
+
+@-moz-keyframes spin-logo {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin-logo {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin-logo {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
