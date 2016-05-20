@@ -21,7 +21,7 @@ const images = {
   facebook: require('../assets/images/facebook.png'),
   airbnb: require('../assets/images/airbnb.png'),
   dropbox: require('../assets/images/dropbox.png'),
-  jurrasicWave: require('../assets/images/jurrasic-wave-v1.png')
+  jurrasicWave: require('../assets/images/jurrasic-wave-v1.png'),
 };
 
 const gifs = {

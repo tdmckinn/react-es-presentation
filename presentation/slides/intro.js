@@ -1,14 +1,20 @@
 
 import React from 'react';
 
-// Import Spectacle Core tags
 import {
   BlockQuote, Cite, Heading,
   Quote, Slide, Text
 } from 'spectacle';
 
+require('!style!raw!sass!./introStyle.scss');
+
 const images = {
-  reactEco: require('../../assets/images/react-eco.png')
+  reactEco: require('../../assets/images/react-eco.png'),
+  graphQLLogo: require('../../assets/images/graphql.svg'),
+  reactLogo: require('../../assets/images/reactjs-logo.svg'),
+  reduxLogo: require('../../assets/images/redux.svg'),
+  relayLogo: require('../../assets/images/relay-logo.svg')
+
 };
 
 const gifs = {
@@ -16,13 +22,16 @@ const gifs = {
 };
 
 const IntroSlides = [
-  <Slide transition={['zoom']} bgColor="black" bgImage={images.reactEco} bgDarken={0.75}>
+  <Slide transition={['zoom']} bgColor="black" bgDarken={0.75}>
     <Heading size={2} fit caps lineHeight={2} textColor="white">
       The ReactJS Ecosystem
     </Heading>
-    <Heading size={1} fit>
-      ReactJS, Relay, GraphQL, Redux, & (Babel)
-    </Heading>
+    <ul className="circle-container">
+      <li><img src={images.reactLogo} /></li>
+      <li><img src={images.reduxLogo} /></li>
+      <li><img src={images.graphQLLogo} /></li>
+      <li><img src={images.relayLogo} /></li>
+    </ul>
   </Slide>,
   <Slide bgColor="black">
     <BlockQuote>

@@ -1,0 +1,102 @@
+
+/// @ https://css-tricks.com/snippets/sass/placing-items-circle/
+/// Mixin to place items on a circle
+/// @author Hugo Giraudel
+/// @author Ana Tudor
+/// @param {Integer} $item-count - Number of items on the circle
+/// @param {Length} $circle-size - Large circle size
+/// @param {Length} $item-size - Single item size
+
+// Modified by: Tirell Mckinnon
+
+@mixin grayscale($scale) {
+  -webkit-filter: grayscale($scale); /* Chrome, Safari, Opera */
+  filter: grayscale($scale);
+}
+
+@mixin on-circle($item-count, $circle-size, $item-size) {  
+  position: relative;
+  width:  $circle-size;
+  height: $circle-size;
+  border-radius: 50%;
+  padding: 0; 
+  list-style: none;
+  
+  > * {
+    display: block;
+    position: absolute;
+    top:  50%; 
+    left: 50%;
+    margin: -($item-size / 2);
+    width:  $item-size;
+    height: $item-size;
+  
+    $angle: (360 / $item-count);
+    $rot: 0;
+
+    @for $i from 1 through $item-count {
+      &:nth-of-type(#{$i}) {
+        transform: rotate($rot * 1deg) translate($circle-size / 2) rotate($rot * -1deg);
+      }
+
+      $rot: $rot + $angle;
+    }
+  }
+}
+
+.circle-container {
+  @include on-circle($item-count: 4, $circle-size: 16em, $item-size: 4em); 
+  margin: -7em auto 0;
+  border: solid 5px #00D8FF;
+  z-index: -1;
+  
+  img {
+    display: block; 
+    max-width: 120px; 
+    border-radius: 50%;
+    border: solid 5px #00D8FF;
+    background-color: black;
+    transition: .15s;
+    
+    @extend %toggle-grayscale;
+  }
+}
+
+// Custom animations
+%toggle-grayscale {
+    -webkit-animation-name: grayscaleToggle;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    //-webkit-animation-delay: 2s;
+
+    -moz-animation-name: grayscaleToggle;
+    -moz-animation-duration: 2s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+    //-moz-animation-delay: 2s;
+
+    animation-name: grayscaleToggle;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    //animation-delay: 2s;
+}
+
+@-moz-keyframes grayscaleToggle {  
+  0% { @include grayscale(100%);}
+  50% {  @include grayscale(0); }
+  100% { @include grayscale(100%); }
+}
+
+@-webkit-keyframes grayscaleToggle {  
+  0% { @include grayscale(100%);}
+  50% {  @include grayscale(0); }
+  100% { @include grayscale(100%); }
+}
+
+@keyframes grayscaleToggle {  
+  0% { @include grayscale(100%);}
+  50% {  @include grayscale(0); }
+  100% { @include grayscale(100%); }
+}

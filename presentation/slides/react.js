@@ -43,7 +43,8 @@ const ReactSlides = [
     </Layout>
   </Slide>,
   <Slide transition={['slide']} bgColor="black">
-    <Text textColor="white">State Machines / Containers / Presentational / Functional </Text>
+    <Text textColor="white"> <span style={blue}>State Machines </span> / Containers /
+    <span style={blue}> Presentational </span> / Functional </Text>
     <Layout>
       <Fill>
         <CodePane
