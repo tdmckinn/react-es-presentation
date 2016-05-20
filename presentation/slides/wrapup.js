@@ -12,13 +12,13 @@ const thankyouListTextSize = '26px';
 const ConclusionSlides = [
   <Slide transition={['zoom']} bgColor="black">
     <Heading size={1} caps fit textColor="tertiary">
-      Honoroable Mentions...
+      Honorable Mentions...
     </Heading>
     <List textColor="white">
       <ListItem> React Native </ListItem>
       <ListItem> Flow </ListItem>
       <ListItem> Typescript </ListItem>
-      <ListItem> Faclorjs By Netflix </ListItem>
+      <ListItem> Falcorjs By Netflix </ListItem>
       <ListItem> Apollo Stack by the Meteorjs team </ListItem>
     </List>
   </Slide>,
@@ -52,7 +52,7 @@ const ConclusionSlides = [
           <ListItem textSize={thankyouListTextSize}>
             <Link href="https://github.com/FormidableLabs/spectacle">Spectacle Presentation Library</Link></ListItem>
           <ListItem textSize={thankyouListTextSize}>
-            <Link href="https://stackoverflow.com/research/developer-survey-2016">Stackoverflow Devloper Survey</Link></ListItem>
+            <Link href="https://stackoverflow.com/research/developer-survey-2016">Stackoverflow Developer Survey</Link></ListItem>
         </List>
       </Fill>
         <Fill>
@@ -61,9 +61,9 @@ const ConclusionSlides = [
           <ListItem textSize={thankyouListTextSize}>
             <Link href="https://github.com/reactjs">React Community aka (rackt)</Link></ListItem>
           <ListItem textSize={thankyouListTextSize}>
-            <Link href="https://github.com/enaqx/awesome-react">Awseome React</Link></ListItem>
+            <Link href="https://github.com/enaqx/awesome-react">Awesome React</Link></ListItem>
           <ListItem textSize={thankyouListTextSize}>
-            <Link href="https://github.com/chentsulin/awesome-graphql">Awseome GraphQL</Link></ListItem>
+            <Link href="https://github.com/chentsulin/awesome-graphql">Awesome GraphQL</Link></ListItem>
           <ListItem textSize={thankyouListTextSize}>
             <Link href="https://app.moqups.com">Moqups</Link></ListItem>
         </List>

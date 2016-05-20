@@ -15,6 +15,7 @@ const images = {
 
 };
 const lightPurple = '#e535ab';
+const styleLightPurple = { color: lightPurple };
 
 const GraphQLSlides = [
   <Slide
@@ -46,11 +47,11 @@ const GraphQLSlides = [
       <Fill>
         <Text textColor="white">Key concepts of the GraphQL query language are:</Text>
         <List textColor="white">
-          <ListItem>Hierarchical</ListItem>
-          <ListItem>Product‐centric</ListItem>
-          <ListItem>Strong‐typing</ListItem>
-          <ListItem>Client‐specified queries</ListItem>
-          <ListItem>Introspective</ListItem>
+          <ListItem> Hierarchical </ListItem>
+          <ListItem> Product‐centric </ListItem>
+          <ListItem> Strong‐typing </ListItem>
+          <ListItem> Client‐specified queries </ListItem>
+          <ListItem> Introspective </ListItem>
         </List>
       </Fill>
     </Layout>
@@ -63,20 +64,23 @@ const GraphQLSlides = [
   </Slide>,
   <Slide transition={['slide']} bgColor="black">
     <Heading size={3} textColor={lightPurple} textFont="primary">
-        Getting Started...
+      Getting Started...
     </Heading>
     <List textColor="white">
       <ListItem textSize="1.9rem">
-        A GraphQL Schema: A description of your data model with an associated set of resolve
+        <span style={styleLightPurple}> A GraphQL Schema: </span> A description of your data model with an associated set of resolve
         methods that know how to fetch any data your application could ever need.
       </ListItem>
       <ListItem textSize="1.9rem">
-        A GraphQL Server: Any server can be taught to load a schema and speak GraphQL</ListItem>
-      <ListItem textSize="1.9rem">Relay: Relay speaks to GraphQL servers through a network layer.
+         <span style={styleLightPurple}> A GraphQL Server: </span> Any server can be taught to load a schema and speak GraphQL
+      </ListItem>
+      <ListItem textSize="1.9rem">
+       <span style={styleLightPurple}> Relay: </span> Relay speaks to GraphQL servers through a network layer.
         The network layer that ships with Relay is compatible with express-graphql out of the box,
         and will continue to evolve as we add new features to the transport.
       </ListItem>
-      <ListItem textSize="1.9rem"> Apollo Client: Alternative developed by MeteorJS team that allows
+      <ListItem textSize="1.9rem">
+       <span style={styleLightPurple}> Apollo Client: </span> Alternative developed by MeteorJS team that allows
        for use with Redux integration that speaks to GraphQL backend.
       </ListItem>
     </List>
@@ -108,7 +112,7 @@ const GraphQLSlides = [
   </Slide>,
   <Slide bgColor="black" textFont="primary">
     <Heading textColor={lightPurple}> What's the learning curve ? </Heading>
-     <Text textColor="white"> Intermediate to Hard </Text>
+     <Text textColor="white"> Easy to Hard </Text>
   </Slide>,
   <Slide bgColor="black">
     <Heading size={4} caps textColor="black"

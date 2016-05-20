@@ -10,6 +10,7 @@ import {
 const images = {
   reactPic: require('../../assets/images/reactpic.jpeg')
 };
+const styleColor = '#00D8FF';
 const blue = { color: '#00D8FF' };
 
 const ReactSlides = [
@@ -25,26 +26,28 @@ const ReactSlides = [
   </Slide>,
   <Slide transition={['slide']} bgColor="black">
     <Layout>
-    <Fill>
-      <CodePane
-        lang="jsx"
-        source={require('raw!../../assets/code/html-jsx.example')}
-        margin="20px 1px"
-      />
-    <Text><Link textColor="primary" href="https://babeljs.io/repl/"> JSX to JS Transformer</Link></Text>
-    </Fill>
-    <Fill>
-      <CodePane
-        lang="jsx"
-        source={require('raw!../../assets/code/jsx-js.example')}
-        margin="20px 9px"
-      />
-    </Fill>
+      <Fill>
+        <CodePane
+          lang="jsx"
+          source={require('raw!../../assets/code/html-jsx.example')}
+          margin="20px 1px"
+        />
+      <Text><Link textColor="primary" href="https://babeljs.io/repl/"> JSX to JS Transformer</Link></Text>
+      </Fill>
+      <Fill>
+        <CodePane
+          lang="jsx"
+          source={require('raw!../../assets/code/jsx-js.example')}
+          margin="20px 9px"
+        />
+      </Fill>
     </Layout>
   </Slide>,
   <Slide transition={['slide']} bgColor="black">
-    <Text textColor="white"> <span style={blue}>State Machines </span> / Containers /
-    <span style={blue}> Presentational </span> / Functional </Text>
+    <Text textColor="white">
+      <span style={blue}> State Machines </span> / Containers /
+      <span style={blue}> Presentational </span> / Functional
+    </Text>
     <Layout>
       <Fill>
         <CodePane
@@ -63,17 +66,59 @@ const ReactSlides = [
     </Layout>
   </Slide>,
   <Slide transition={['zoom']} bgColor="black">
-    <Heading textColor="#00D8FF"> Alternative to JSX </Heading>
+    <Heading textColor={styleColor}> Alternative to JSX </Heading>
+  </Slide>,
+  <Slide transition={['zoom']} bgColor="black">
+    <Heading size={4} textColor="primary" textFont="primary">
+      React hyperscript
+    </Heading>
+    <Layout>
+      <Fill>
+        <CodePane
+          lang="jsx"
+          source={require('raw!../../assets/code/jsx-alt1.example')}
+          margin="20px 1px"
+        />
+      </Fill>
+    </Layout>
+  </Slide>,
+  <Slide transition={['zoom']} bgColor="black">
+    <Heading size={4} textColor="primary" textFont="primary">
+      React Uber r-dom
+    </Heading>
+    <Layout>
+      <Fill>
+        <CodePane
+          lang="jsx"
+          source={require('raw!../../assets/code/jsx-alt2.example')}
+          margin="20px 1px"
+        />
+      </Fill>
+    </Layout>
+  </Slide>,
+  <Slide transition={['zoom']} bgColor="black">
+    <Heading size={4} textColor="primary" textFont="primary">
+      React value	destructuring
+    </Heading>
+    <Layout>
+      <Fill>
+        <CodePane
+          lang="jsx"
+          source={require('raw!../../assets/code/jsx-altdescrut.example')}
+          margin="20px 1px"
+        />
+      </Fill>
+    </Layout>
   </Slide>,
   <Slide>
     <Heading> Why React ? </Heading>
-    <Text> Declaritve, Predicateble, Testable, & Realibablity ++Javascript </Text>
+    <Text> Declarative, Predictable, Testable, & Reliability ++JavaScript </Text>
   </Slide>,
   <Slide>
-    <Heading> Declartive and Composoble</Heading>
+    <Heading> Declarative and Composable</Heading>
   </Slide>,
   <Slide>
-    <Heading> What's the learning curve ? Awseome </Heading>
+    <Heading> What's the learning curve ?	Awesome </Heading>
   </Slide>,
   <Slide transition={['zoom']} bgColor="black">
     <Heading size={4} caps textColor="secondary" bgColor="white" margin={10}>
@@ -103,7 +148,7 @@ const ReactSlides = [
       <ListItem textSize="1.6rem">
          <span style={blue}> shouldComponentUpdate </span>
          - Fired before rendering when new props or state are received.
-        return false if you know an update isn't needed.
+          ( return false if you know an update isn't needed. )
       </ListItem>
       <ListItem textSize="1.6rem">
          <span style={blue}> componentWillUnmount </span>
@@ -113,7 +158,7 @@ const ReactSlides = [
     </List>
   </Slide>,
   <Slide>
-    <Heading>Access the to DOM </Heading>
+    <Heading>Access to the DOM </Heading>
     <Text> Getting a handle on references </Text>
   </Slide>,
   <Slide>
@@ -140,7 +185,7 @@ const ReactSlides = [
     <List>
       <ListItem>Inline Styles</ListItem>
       <ListItem>Require extract CSS</ListItem>
-      <ListItem>CSS Modlues</ListItem>
+      <ListItem>CSS	Modules </ListItem>
     </List>
   </Slide>,
   <Slide transition={['slide']} bgColor="black">
@@ -187,7 +232,7 @@ const ReactSlides = [
   </Slide>,
   <Slide transition={['slide']} bgColor="black">
     <Heading size={4} caps textColor="secondary" bgColor="white" margin={10}>
-    CSS Modlues
+    CSS Modules
     </Heading>
     <Layout>
       <Fill>

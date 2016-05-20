@@ -2,15 +2,11 @@
 class Story extends React.Component {
   constructor() {
     super();
-    this.state = {
-      message: 'Hello'
-    };
+    this.state = { message: 'Hello' };
     this.handleClick = this.handleClick.bind(this);
   } 
   handleClick() {
-    this.setSate({
-      message: 'World'
-    });
+    this.setSate({  message: 'World' });
   }
   render() {
     return (

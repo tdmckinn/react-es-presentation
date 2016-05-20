@@ -15,9 +15,11 @@ const ReduxSlides = [
     transition={['zoom', 'fade']}
     bgImage={images.reduxLogo}
     bgColor="black"
+    bgDarken={0.75}
     bgSize="contain"
     bgRepeat="no-repeat"
   >
+    <Heading textColor="white" size={4}> Redux </Heading>
     <Text textColor="#fff">Client Side State Management</Text>
   </Slide>,
   <Slide transition={['zoom', 'fade']} bgColor="black" bgDarken={0.85}>
@@ -38,7 +40,7 @@ const ReduxSlides = [
   <Slide bgColor={purple}>
     <Heading> Why Redux ? </Heading>
     <Text> Single Source of Truth, Testable, encorugages best practices in JS development,
-      and provides intergration to enable state machines...
+      and provides integration to enable state machines...
     </Text>
   </Slide>,
   <Slide bgColor={purple}>
