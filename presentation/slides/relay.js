@@ -55,6 +55,25 @@ const RelaySlides = [
       </Fill>
     </Layout>
   </Slide>,
+  <Slide transition={['slide']} bgColor="black">
+    <Text textColor="white">Relay Mutations </Text>
+    <Layout>
+      <Fill>
+        <CodePane
+          lang="jsx"
+          source={require('raw!../../assets/code/relayMutation1.example')}
+          margin="20px 5px"
+        />
+      </Fill>
+      <Fill>
+        <CodePane
+          lang="jsx"
+          source={require('raw!../../assets/code/relayMutation2.example')}
+          margin="20px"
+        />
+      </Fill>
+    </Layout>
+  </Slide>,
   <Slide bgColor={orange}>
     <Heading> Why Relay ? </Heading>
     <Text> See Key Concepts... </Text>

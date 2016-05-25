@@ -1,0 +1,28 @@
+class Story extends React.Component {
+  _handleSubmit = (e) => {
+    Relay.Store.update(
+      new CreateCommentMutation({
+        story: this.props.story,
+        text: this.refs.newCommentInput.value,
+      })
+    );
+    this.refs.newCommentInput.value = '';
+  }
+  render() {
+    return (
+      <form onSubmit={this._handleSubmit}>
+        <ul> {this.props.story.comments.map(comment => 
+          <Comment comment={comment} /> )}
+        </ul>
+        <input placeholder="Weigh in&hellip;" ref="newCommentInput"
+         type="text" />
+      </form>
+    );}}
+    
+Story = Relay.createContainer(Story, {
+  fragments: {
+    story: () => Relay.QL`
+      fragment on Story {
+        comments { ${Comment.getFragment('comment')}},
+        ${CreateCommentMutation.getFragment('story')},
+   }` } });

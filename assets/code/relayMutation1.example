@@ -1,0 +1,28 @@
+class CreateCommentMutation extends Relay.Mutation {
+  static fragments = { story: () => Relay.QL` fragment on Story { id } `, };
+  getMutation() { return Relay.QL` mutation{ createComment } `; }
+  getFatQuery() {
+    return Relay.QL` fragment on CreateCommentPayload { story { comments } } `;
+  }
+  getConfigs() {
+    return [{
+      type: 'FIELDS_CHANGE',
+      fieldIDs: { story: this.props.story.id },
+    }];
+  }
+  getVariables() {  
+    return { text: this.props.text }; }
+}
+
+class Comment extends React.Component {
+  render() {
+    var {id, text} = this.props.comment;
+    return <li key={id}>{text}</li>;
+  }
+}
+
+Comment = Relay.createContainer(Comment, {
+  fragments: {
+    comment: () => Relay.QL`
+      fragment on Comment { id,   text, }`
+  }, });

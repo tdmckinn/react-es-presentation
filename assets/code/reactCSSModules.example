@@ -2,6 +2,7 @@
 /* dino.css */
 .className {
   color: green;
+  composes: large from "./typography.css";
 }
 
 /* dino.js */

@@ -76,13 +76,13 @@
 
 // Custom animations
 %logo-animations {
-  -webkit-animation: grayscale-toggle 2s ease-in infinite, spin-logo 20s;
+  -webkit-animation: grayscale-toggle 2s ease-in infinite, spin-logo 20s linear infinite;
   //-webkit-animation-delay: 2s;
 
-  -moz-animation-name: grayscale-toggle 2s ease-in infinite, spin-logo 20s;
+  -moz-animation-name: grayscale-toggle 2s ease-in infinite, spin-logo 2s linear infinite;
   //-moz-animation-delay: 2s;
 
-  animation-name: grayscale-toggle 2s ease-in infinite, spin-logo 20s;
+  animation-name: grayscale-toggle 2s ease-in infinite, spin-logo 20s linear infinite;
   //animation-delay: 2s;
 }
 

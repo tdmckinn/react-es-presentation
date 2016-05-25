@@ -27,10 +27,10 @@ const IntroSlides = [
       The ReactJS Ecosystem
     </Heading>
     <ul className="circle-container">
-      <li><img src={images.reactLogo} /></li>
       <li><img src={images.reduxLogo} /></li>
       <li><img src={images.graphQLLogo} /></li>
       <li><img src={images.relayLogo} /></li>
+      <li><img src={images.reactLogo} /></li>
       <li><img src={images.babelLogo} className="babel-logo" /></li>
     </ul>
   </Slide>,
@@ -53,12 +53,13 @@ const IntroSlides = [
     </Heading>
     <div style={{ color: '#fff' }}>
       <ol>
-        <li>React JS</li>
-        <li>GraphQL</li>
-        <li>Relay</li>
-        <li>Redux</li>
-        <li>APP DEMO!!!</li>
-        <li>Honorable Mentions</li>
+        <li> React JS </li>
+        <li> GraphQL </li>
+        <li> Relay </li>
+        <li> Redux </li>
+        <li> APP DEMO!!! </li>
+        <li> Honorable Mentions </li>
+        <li> Questions </li>
       </ol>
     </div>
   </Slide>,
