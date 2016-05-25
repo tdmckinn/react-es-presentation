@@ -27,10 +27,10 @@ const ReactSlides = [
   <Slide bgColor="black">
     <Heading textColor={styleColor}> Ideology </Heading>
     <List>
-      <ListItem> Functional Lite approach </ListItem>
-      <ListItem> Prefers Immutablity and protects against it </ListItem>
-      <ListItem> Components as functions / Encapsulation </ListItem>
-      <ListItem> One-way reactive data flow </ListItem>
+      <ListItem textColor="white"> Functional Lite approach </ListItem>
+      <ListItem textColor="white"> Prefers Immutablity and protects against it </ListItem>
+      <ListItem textColor="white"> Components as functions / Isolation </ListItem>
+      <ListItem textColor="white"> One-way reactive data flow </ListItem>
     </List>
   </Slide>,
   <Slide transition={['slide']} bgColor="black">
@@ -121,13 +121,12 @@ const ReactSlides = [
   </Slide>,
   <Slide>
     <Heading> Why React ? </Heading>
-    <Text> Simple, Declarative, Predictable, Testable, & Reliability ++JavaScript </Text>
+    <Text>
+      Simple, Declarative, Composable, Predictable, & Reliability ++JavaScript
+    </Text>
   </Slide>,
   <Slide>
-    <Heading> Declarative and Composable</Heading>
-  </Slide>,
-  <Slide>
-    <Heading> What's the learning curve ?	Awesome </Heading>
+    <Heading> What's the learning curve ?	Easy </Heading>
   </Slide>,
   <Slide transition={['zoom']} bgColor="black">
     <Heading size={4} caps textColor="secondary" bgColor="white" margin={10}>
@@ -169,14 +168,6 @@ const ReactSlides = [
   <Slide>
     <Heading>Access to the DOM </Heading>
     <Text> Getting a handle on references </Text>
-  </Slide>,
-  <Slide>
-    <Heading>More on State...</Heading>
-    <Text> Default State aka Initial State </Text>
-  </Slide>,
-  <Slide>
-    <Heading>More on State...</Heading>
-    <Text>Updating State </Text>
   </Slide>,
   <Slide transition={['zoom']} bgColor="black">
     <Heading size={4} caps textColor="secondary" bgColor="white" margin={10}>

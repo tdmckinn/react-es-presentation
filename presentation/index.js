@@ -51,7 +51,7 @@ export default class Presentation extends React.Component {
               GraphQLSlides,
               RelaySlides,
               ReduxSlides,
-              TestingSlides,
+              // TestingSlides,
               <Slide>
                 <Heading> Pros & Cons </Heading>
                  <Text> Why do these libraries exsit ? </Text>

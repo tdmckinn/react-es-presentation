@@ -10,7 +10,7 @@ const TestingSlides = [
     <Heading size={4} caps textColor="secondary" bgColor="white" margin={10}>
       Testing React
     </Heading>
-    <Text textColor="white">Enzyme by Airbnb </Text>
+    <Text textColor="white"> Enzyme by Airbnb </Text>
     <Text textColor="white"> Assert chai-enyze.</Text>
     <Text textColor="white"> Jest by Facebook </Text>
   </Slide>

@@ -23,23 +23,29 @@ const ConclusionSlides = [
     </List>
   </Slide>,
   <Slide transition={['spin', 'slide']} bgColor="primary">
-    <Heading size={1} caps lineHeight={1} textColor="white">
+    <Heading size={1} caps lineHeight={1} textColor="black">
       Thank You
     </Heading>
-    <Layout>
+    <Layout >
       <Fill>
-      <Text> Me: </Text>
+        <Text textAlign="left"> Me: </Text>
         <List>
           <ListItem textSize={thankyouListTextSize}>
-            <Link href="https://github.com/tdmckinn/jurastic-waves">Jurrasic Waves</Link></ListItem>
+            <Link href="http://tirellmckinnon.com">Tirell Mckinnon</Link>
+          </ListItem>
           <ListItem textSize={thankyouListTextSize}>
-            <Link href="https://github.com/tdmckinn">Github: @tdmckinn</Link></ListItem>
+            <Link href="https://github.com/tdmckinn">Github: @tdmckinn</Link>
+          </ListItem>
           <ListItem textSize={thankyouListTextSize}>
-            <Link href="https://twitter.com/TirellMckinnon">Twitter: @TirellMckinnon</Link></ListItem>
+            <Link href="https://twitter.com/TirellMckinnon">Twitter: @TirellMckinnon</Link>
+          </ListItem>
+          <ListItem textSize={thankyouListTextSize}>
+            <Link href="https://github.com/tdmckinn/jurastic-waves">Jurrasic Waves</Link>
+          </ListItem>
         </List>
       </Fill>
       <Fill>
-        <Text>Resources =></Text>
+        <Text textAlign="left">Resources =></Text>
         <List>
           <ListItem textSize={thankyouListTextSize}>
             <Link href="https://facebook.github.io/react/">Reactjs</Link></ListItem>
@@ -55,8 +61,8 @@ const ConclusionSlides = [
             <Link href="https://stackoverflow.com/research/developer-survey-2016">Stackoverflow Developer Survey</Link></ListItem>
         </List>
       </Fill>
-        <Fill>
-        <Text>Resources Cont..</Text>
+      <Fill>
+        <Text textAlign="left">Resources Cont..</Text>
         <List>
           <ListItem textSize={thankyouListTextSize}>
             <Link href="https://github.com/reactjs">React Community aka (rackt)</Link></ListItem>
