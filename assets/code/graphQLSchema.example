@@ -1,20 +1,22 @@
 const Root = new GraphQLObjectType({
-  name: 'Root',
-  fields: {
-    viewer: { type: GraphQLUser, resolve: () => getViewer(), },
-    node: nodeField,
-  },
+  name: 'Query',
+  fields: () => ({
+    viewer: queryDinosaurs,
+    queryDinosaurList,
+    queryDinosaur
+  })
 });
 
 const Mutation = new GraphQLObjectType({
   name: 'Mutation',
   fields: {
-    addTodo: GraphQLAddTodoMutation,
-    changeTodoStatus: GraphQLChangeTodoStatusMutation,
-  },
+    addTodo: GraphQLAddStarMutation
+  }
 });
 
-export const schema = new GraphQLSchema({
+export const Schema = new GraphQLSchema({
   query: Root,
-  mutation: Mutation,
+  mutation: Mutation
 });
+
+export default Schema

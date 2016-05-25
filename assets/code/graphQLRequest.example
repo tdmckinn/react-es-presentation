@@ -1,6 +1,3 @@
-<!-- RESTFUL Query -->
-
-GET /hero/1/friends/1/dogs/1?include=user.name,dog.age
 
 <!-- GraphQL Query -->
 {
@@ -14,3 +11,5 @@ GET /hero/1/friends/1/dogs/1?include=user.name,dog.age
     }
   }
 }
+
+

@@ -1,21 +1,23 @@
-
-const UserType = new GraphQLObjectType({
-  name : 'User',
-  fields : {
-    username : { type : GraphQLString }
+export const DinosaurType = new GraphQLObjectType({
+  name: 'Dinosaur',
+  description: 'A Dino creature beloning to the family Animilia',
+  fields: {
+    id: {
+      type: new GraphQLNonNull(GraphQLID),
+      description: 'The id of the Dinosaur'
+    },
+    name: {
+      type: GraphQLString
+    },
   }
 });
 
-const MovieType = new GraphQLObjectType({
-  name : 'Movie',
-  fields : {
-    director : { type : GraphQLString }
-  }
-});
-
-const BookType = new GraphQLObjectType({
-  name : 'Book',
-  fields : {
-    author : { type : GraphQLString }
+export const DinosaurListType = new GraphQLObjectType({
+  name: 'DinosaurList',
+  fields: () => ({
+    id: globalIdField('DinosaurList'),
+    dinosaurs: {
+      type: DinosaurListConnection
+    },
   }
 });

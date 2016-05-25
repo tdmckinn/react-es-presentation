@@ -1,23 +1,27 @@
-
-interface Searchable {
-  searchPreviewText: String!
-} 
-
-type User implements Searchable {
-  searchPreviewText: String!
-  username: String!
+schema {
+  query: Query
 }
 
-type Movie implements Searchable {
-  searchPreviewText: String!
-  directory: String!
+type Dinosaur {
+  id: ID!
+  name: String
 }
 
-type Book implements Searchable {
-  searchPreviewText: String!
-  author: String!
+type DinosaurConnection {
+  edges: [DinosaurEdge]
+}
+
+type DinosaurEdge {
+  node: Dinosaur
+}
+
+type DinosaurList implements Node {
+  dinosaurs(kingdom: String, ...): DinosaurConnection
+  totalNumberOfDinosaurs: Int
 }
 
 type Query {
-  search(text: String!): [Searchable]!
+  viewer: DinosaurList
+  queryDinosaurList: [Dinosaur]
+  queryDinosaur(id: ID!): Dinosaur
 }

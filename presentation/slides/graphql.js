@@ -11,11 +11,10 @@ const images = {
   city: require('../../assets/images/city.jpg'),
   graphQL: require('../../assets/images/graphql.svg'),
   graphQLOverview: require('../../assets/images/graphqlchart.png'),
-  rest_graphql: require('../../assets/images/rest_graphql.png'),
-
+  rest_graphql: require('../../assets/images/rest_graphql.png')
 };
 
-// Styles 
+// Styles
 const lightPurple = '#e535ab';
 const styleLightPurple = { color: lightPurple };
 const graphQLBorderBottom = { borderBottom: '1px solid black' };
@@ -35,8 +34,8 @@ const GraphQLSlides = [
     </Heading>
     <Text textColor="#fff">A DATA QUERY LANGUAGE AND RUNTIME </Text>
   </Slide>,
-  <Slide transition={['zoom', 'fade']} bgImage={images.city.replace('/', '')} bgDarken={0.85}>
-    <Heading size={4} caps textColor="secondary" bgColor="white" margin={10}>
+  <Slide transition={['zoom', 'fade']} bgColor="black" bgDarken={0.85}>
+    <Heading size={4} caps textColor={lightPurple} bgColor="white" margin={10}>
       What is GraphQL? Single API endpoint data retrieval
     </Heading>
     <Layout>
@@ -71,19 +70,23 @@ const GraphQLSlides = [
     </Heading>
     <List textColor="white">
       <ListItem textSize="1.9rem">
-        <span style={styleLightPurple}> A GraphQL Schema: </span> A description of your data model with an associated set of resolve
+        <span style={styleLightPurple}> A GraphQL Schema: </span>
+        A description of your data model with an associated set of resolve
         methods that know how to fetch any data your application could ever need.
       </ListItem>
       <ListItem textSize="1.9rem">
-         <span style={styleLightPurple}> A GraphQL Server: </span> Any server can be taught to load a schema and speak GraphQL
+         <span style={styleLightPurple}> A GraphQL Server: </span>
+         Any server can be taught to load a schema and speak GraphQL
       </ListItem>
       <ListItem textSize="1.9rem">
-       <span style={styleLightPurple}> Relay: </span> Relay speaks to GraphQL servers through a network layer.
+       <span style={styleLightPurple}> Relay: </span>
+       Relay speaks to GraphQL servers through a network layer.
         The network layer that ships with Relay is compatible with express-graphql out of the box,
         and will continue to evolve as we add new features to the transport.
       </ListItem>
       <ListItem textSize="1.9rem">
-       <span style={styleLightPurple}> Apollo Client: </span> Alternative developed by MeteorJS team that allows
+       <span style={styleLightPurple}> Apollo Client: </span>
+       Alternative developed by MeteorJS team that allows
        for use with Redux integration that speaks to GraphQL backend.
       </ListItem>
     </List>
@@ -95,14 +98,14 @@ const GraphQLSlides = [
         <CodePane
           lang="jsx"
           source={require('raw!../../assets/code/graphQLRequest.example')}
-          margin="20px 1px"
+          margin="20px 5px"
         />
       </Fill>
       <Fill>
         <CodePane
           lang="jsx"
           source={require('raw!../../assets/code/graphQLResponse.example')}
-          margin="20px 1px"
+          margin="20px"
         />
       </Fill>
     </Layout>
@@ -153,15 +156,14 @@ const GraphQLSlides = [
     <Heading size={4} caps textColor="black"
       bgColor="white"
     > GraphQL's Type system </Heading>
-    <List>
+    <List textColor="white">
       <ListItem> User Defined shapes and interfaces </ListItem>
       <ListItem> Optional or required fields </ListItem>
       <ListItem> Self documenting </ListItem>
-      <ListItem> Self </ListItem>
     </List>
   </Slide>,
   <Slide bgColor="black">
-    <Heading size={4} caps textColor="black"
+    <Heading size={4} caps textColor={lightPurple}
       bgColor="white"
     > GraphQL's Type system Example </Heading>
      <Layout>
@@ -180,6 +182,20 @@ const GraphQLSlides = [
         />
     </Fill>
     </Layout>
+  </Slide>,
+  <Slide bgColor="black">
+    <Heading size={4} caps textColor={lightPurple}
+      bgColor="black"
+    > Alternative Schema Creations </Heading>
+  </Slide>,
+  <Slide bgColor="black">
+     <Heading size={4} caps textColor="black" bgColor="white">
+      graph.ql
+    </Heading>
+    <img src="https://camo.githubusercontent.com/85907862c0f638b1ec8680dbc983e492d34a19f5/68747470733a2f2f636c6475702e636f6d2f6b596c776555307077792e706e67"
+      alt=""
+      style={{ maxWidth: 800, maxHeight: 545 }}
+    />
   </Slide>,
   <Slide transition={['zoom']} bgColor="black" >
     <Heading size={4} textColor="tertiary">
@@ -223,12 +239,12 @@ const GraphQLSlides = [
     <Text textColor="white">
       More powerful and flexible than simple lists.
       Support pagination (forward and back), with cursors.
-      Fine-grained mutation support (eg. RANGE_ADD, RANGE_DELETE, NODE_DELETE, as described in the guide).
+      Fine-grained mutation support
+      (eg. RANGE_ADD, RANGE_DELETE, NODE_DELETE, as described in the guide).
       Requires a first or last argument in order to limit the size of the result set.
       Has an edges field that provides a place to locate per-edge, edge-specific data.
       A heavier-weight concept, requiring more work to define in the schema.
-      Lists
-      Simple and lightweight.
+      Lists Simple and lightweight.
       No support for pagination (the entire list is always returned).
       No special mutations features for prepending, appending etc
       (although it is a requested feature).
@@ -253,16 +269,25 @@ const GraphQLSlides = [
   </Slide>,
   <Slide bgColor="black">
     <Heading textColor="white" size={4}> Cursor Specification Key terms </Heading>
-     <Markdown>
-      {`
-        * A **connection** is a paginated field on an object — for example, the friends field on a user or the comments field on a blog post.</li>
-        * An **edge** has metadata about one object in the paginated list, and includes a cursor to allow pagination starting from that object..</li>
-        * A **node** represents the actual object you were looking for
-        * **pageInfo** lets the client know if there are more pages of data to fetch. In the Relay specification, it doesn’t tell you the total number of items, because the client cache doesn’t need that info. It would be up to the developer to expose that information through another field.
-
-        -  [Apollo stack](https://medium.com/apollo-stack/understanding-pagination-rest-graphql-and-relay-b10f835549e7#.97kypxjtm)
-              `}
-      </Markdown>
+    <List textColor="white">
+      <ListItem textSize="2.1rem">
+        A **connection** is a paginated field on an object — for example,
+        the friends field on a user or the comments field on a blog post. </ListItem>
+      <br />
+      <ListItem textSize="2.1rem">
+        An **edge** has metadata about one object in the paginated list, and includes
+        a cursor to allow pagination starting from that object </ListItem>
+      <br />
+      <ListItem textSize="2.1rem">
+        A **node** represents the actual object you were looking for </ListItem>
+      <br />
+      <ListItem textSize="2.1rem">
+        **pageInfo** lets the client know if there are more pages of data to fetch. In the Relay specification,
+        it doesn’t tell you the total number of items, because the client cache doesn’t need that info.
+        It would be up to the developer to expose that information through another field.
+      </ListItem>
+    </List>
+    <Text> [Apollo stack](https://medium.com/apollo-stack/understanding-pagination-rest-graphql-and-relay-b10f835549e7#.97kypxjtm) </Text>
   </Slide>,
   <Slide bgColor={lightPurple}>
     <Heading> Show the Tools! </Heading>
