@@ -52,7 +52,7 @@ const IntroSlides = [
       Agenda
     </Heading>
     <div style={{ color: '#fff' }}>
-      <ul>
+      <ol>
         <li> React JS </li>
         <li> GraphQL </li>
         <li> Relay </li>
@@ -60,7 +60,7 @@ const IntroSlides = [
         <li> APP DEMO!!! </li>
         <li> Honorable Mentions </li>
         <li> Questions </li>
-      </ul>
+      </ol>
     </div>
   </Slide>,
   <Slide bgColor="black">,

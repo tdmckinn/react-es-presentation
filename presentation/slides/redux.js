@@ -57,7 +57,7 @@ const ReduxSlides = [
     <Heading size={4} textColor="tertiary">
       Redux Flow
     </Heading>
-    <img src={images.reduxFlow.replace('/', '') } style={{ maxWidth: 700 }} />
+    <img src="http://staltz.com/img/mvu-unidir-ui-arch.jpg" style={{ maxWidth: 700 }} />
   </Slide>,
   <Slide bgColor={purple}>
     <Heading> Why Redux ? </Heading>

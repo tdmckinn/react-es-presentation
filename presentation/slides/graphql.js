@@ -221,6 +221,25 @@ const GraphQLSlides = [
       style={{ maxWidth: 800, maxHeight: 545 }}
     />
   </Slide>,
+  <Slide transition={['slide']} bgColor="black">
+    <Text textColor="white">Apollo Example </Text>
+    <Layout>
+      <Fill>
+        <CodePane
+          lang="jsx"
+          source={require('raw!../../assets/code/graphQLApolloSchema.example')}
+          margin="20px 5px"
+        />
+      </Fill>
+      <Fill>
+        <CodePane
+          lang="jsx"
+          source={require('raw!../../assets/code/graphQLApolloResolvers.example')}
+          margin="20px"
+        />
+      </Fill>
+    </Layout>
+  </Slide>,
   <Slide transition={['zoom']} bgColor="black" >
     <Heading size={4} textColor="tertiary">
       GraphQL vs REST
