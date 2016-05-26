@@ -54,7 +54,7 @@ export default class Presentation extends React.Component {
               // TestingSlides,
               <Slide>
                 <Heading> Pros & Cons </Heading>
-                 <Text> Why do these libraries exsit ? </Text>
+                 <Text> Why do these libraries exist ? </Text>
               </Slide>,
               <Slide transition={['zoom']} bgColor="black" >
                 <Heading size={1} textColor="tertiary">
