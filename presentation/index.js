@@ -60,7 +60,7 @@ export default class Presentation extends React.Component {
                 <Heading size={1} textColor="tertiary">
                   App Demo...
                 </Heading>
-                <img src={images.jurrasicWave.replace('/', '') } style={{ maxWidth: 800 }} />
+                <img src={images.jurrasicWave.replace('/', '') } style={{ maxWidth: 700 }} />
               </Slide>,
               ConclusionSlides
             ])

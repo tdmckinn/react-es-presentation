@@ -7,6 +7,10 @@ import {
   List, Slide
 } from 'spectacle';
 
+const images = {
+  me: require('../../assets/images/mejs.jpg')
+};
+
 const thankyouListTextSize = '26px';
 
 const ConclusionSlides = [
@@ -54,7 +58,7 @@ const ConclusionSlides = [
           <ListItem textSize={thankyouListTextSize}>
             <Link href="http://graphql.org/">GraphQL</Link></ListItem>
           <ListItem textSize={thankyouListTextSize}>
-            <Link href="http://flowtype.org/">Redux</Link></ListItem>
+            <Link href="http://redux.js.org">Redux</Link></ListItem>
           <ListItem textSize={thankyouListTextSize}>
             <Link href="https://github.com/FormidableLabs/spectacle">Spectacle Presentation Library</Link></ListItem>
           <ListItem textSize={thankyouListTextSize}>
@@ -76,7 +80,10 @@ const ConclusionSlides = [
       </Fill>
     </Layout>
   </Slide>,
-  <Slide transition={['spin', 'slide']} bgColor="black">
+  <Slide transition={['spin', 'slide']} bgColor="black"
+    bgImage={images.me.replace('/', '')}
+    bgDarken={0.75}
+  >
     <Heading> Questions ??? </Heading>
   </Slide>
 ];

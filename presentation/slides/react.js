@@ -107,7 +107,7 @@ const ReactSlides = [
   </Slide>,
   <Slide transition={['zoom']} bgColor="black">
     <Heading size={4} textColor="primary" textFont="primary">
-      React value	destructuring
+      JS Destructuring
     </Heading>
     <Layout>
       <Fill>

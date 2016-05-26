@@ -114,7 +114,9 @@ const GraphQLSlides = [
     <Heading textColor={lightPurple} size={3} textFont="primary">
       Why GrahpQL and What Problems are being solved ?
     </Heading>
-    <Text textColor="white"> Round Trips </Text>
+    <Text textColor="white">
+      Round Trips, Client to Server Validation, Less wory of Endpoints, Flexiblity
+    </Text>
   </Slide>,
   <Slide bgColor="black" textFont="primary">
     <Heading textColor={lightPurple}> What's the learning curve ? </Heading>
@@ -123,7 +125,7 @@ const GraphQLSlides = [
   <Slide bgColor="black">
     <Heading size={4} caps textColor="black"
       bgColor="white"
-    > Lets look at the API...</Heading>
+    > Lets explore GraphQL...</Heading>
     <Layout>
       <Fill>
         <Text textColor="white"> GraphQL's Schema </Text>
@@ -151,6 +153,28 @@ const GraphQLSlides = [
         />
       </Fill>
     </Layout>
+  </Slide>,
+  <Slide bgColor="black">
+    <Heading textColor="white" size={4}> Cursor Specification Key terms </Heading>
+    <List textColor="white">
+      <ListItem textSize="2.1rem">
+        A **connection** is a paginated field on an object — for example,
+        the friends field on a user or the comments field on a blog post. </ListItem>
+      <br />
+      <ListItem textSize="2.1rem">
+        An **edge** has metadata about one object in the paginated list, and includes
+        a cursor to allow pagination starting from that object </ListItem>
+      <br />
+      <ListItem textSize="2.1rem">
+        A **node** represents the actual object you were looking for </ListItem>
+      <br />
+      <ListItem textSize="2.1rem">
+        **pageInfo** lets the client know if there are more pages of data to fetch. In the Relay specification,
+        it doesn’t tell you the total number of items, because the client cache doesn’t need that info.
+        It would be up to the developer to expose that information through another field.
+      </ListItem>
+    </List>
+    <Text> [Apollo stack](https://medium.com/apollo-stack/understanding-pagination-rest-graphql-and-relay-b10f835549e7#.97kypxjtm) </Text>
   </Slide>,
   <Slide bgColor="black">
     <Heading size={4} caps textColor="black"
@@ -266,28 +290,6 @@ const GraphQLSlides = [
       If you want all the items in a connection, you can use first with some large number.
       If you want to expose a short list with minimal effort, use a simple list.
     </Text>
-  </Slide>,
-  <Slide bgColor="black">
-    <Heading textColor="white" size={4}> Cursor Specification Key terms </Heading>
-    <List textColor="white">
-      <ListItem textSize="2.1rem">
-        A **connection** is a paginated field on an object — for example,
-        the friends field on a user or the comments field on a blog post. </ListItem>
-      <br />
-      <ListItem textSize="2.1rem">
-        An **edge** has metadata about one object in the paginated list, and includes
-        a cursor to allow pagination starting from that object </ListItem>
-      <br />
-      <ListItem textSize="2.1rem">
-        A **node** represents the actual object you were looking for </ListItem>
-      <br />
-      <ListItem textSize="2.1rem">
-        **pageInfo** lets the client know if there are more pages of data to fetch. In the Relay specification,
-        it doesn’t tell you the total number of items, because the client cache doesn’t need that info.
-        It would be up to the developer to expose that information through another field.
-      </ListItem>
-    </List>
-    <Text> [Apollo stack](https://medium.com/apollo-stack/understanding-pagination-rest-graphql-and-relay-b10f835549e7#.97kypxjtm) </Text>
   </Slide>,
   <Slide bgColor={lightPurple}>
     <Heading> Show the Tools! </Heading>

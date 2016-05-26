@@ -43,6 +43,11 @@ const RelaySlides = [
       </Fill>
     </Layout>
   </Slide>,
+  <Slide bgColor={orange}>
+    <Heading> Lets explore Relay...</Heading>
+    <Text> Relay.createContainer </Text>
+    <Text> fragments </Text>
+  </Slide>,
   <Slide transition={['slide']} bgColor="black">
     <Text textColor="white">Relay Example</Text>
     <Layout>
@@ -82,11 +87,6 @@ const RelaySlides = [
     <Heading size={4} caps textColor="white"
       bgColor="black"
     > What's the learning curve ? Hard... </Heading>
-  </Slide>,
-  <Slide bgColor={orange}>
-    <Heading> Lets look at the API...</Heading>
-    <Text> Relay.createContainer </Text>
-    <Text> fragemnets </Text>
   </Slide>
 ];
 

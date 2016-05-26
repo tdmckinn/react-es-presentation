@@ -7,7 +7,8 @@ import {
 } from 'spectacle';
 
 const images = {
-  reduxLogo: require('../../assets/images/redux.svg')
+  reduxLogo: require('../../assets/images/redux.svg'),
+  reduxFlow: require('../../assets/images/reduxFlow.jpg')
 };
 const purple = '#764ABC';
 const ReduxSlides = [
@@ -44,13 +45,19 @@ const ReduxSlides = [
     <Layout>
       <Fill>
         <List textColor="white">
-          <ListItem> Actions </ListItem>
-          <ListItem> Reducers </ListItem>
+          <ListItem> Actions - {` type: 'LIKE_ARTICLE', articleId: 42 `} </ListItem>
           <ListItem> Store </ListItem>
+          <ListItem> Reducers - pureFunctionReducer(state = {}, action) </ListItem>
           <ListItem> Dataflow </ListItem>
         </List>
       </Fill>
     </Layout>
+  </Slide>,
+  <Slide transition={['zoom']} bgColor="black" >
+    <Heading size={4} textColor="tertiary">
+      Redux Flow
+    </Heading>
+    <img src={images.reduxFlow.replace('/', '') } style={{ maxWidth: 700 }} />
   </Slide>,
   <Slide bgColor={purple}>
     <Heading> Why Redux ? </Heading>
@@ -62,9 +69,6 @@ const ReduxSlides = [
     <Heading size={4} caps textColor={purple}
       bgColor="black"
     > What's the learning curve ? Easy </Heading>
-  </Slide>,
-  <Slide bgColor={purple}>
-    <Heading> Lets look at the API... </Heading>
   </Slide>
 ];
 

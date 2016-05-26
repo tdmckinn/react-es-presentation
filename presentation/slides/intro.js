@@ -75,14 +75,14 @@ const IntroSlides = [
     bgColor="black"
   >
     <Heading size={1} caps textColor="primary" textFont="primary">
-      Key Words
+      Terminology
     </Heading>
     <div style={{ color: '#fff' }}>
       <ol>
         <li> Higher Order Components </li>
         <li> Dumb Components </li>
         <li> Smart Components </li>
-        <li> Things </li>
+        <li> Connections </li>
       </ol>
     </div>
   </Slide>
