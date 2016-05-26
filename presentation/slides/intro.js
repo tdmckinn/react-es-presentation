@@ -52,7 +52,7 @@ const IntroSlides = [
       Agenda
     </Heading>
     <div style={{ color: '#fff' }}>
-      <ol>
+      <ul>
         <li> React JS </li>
         <li> GraphQL </li>
         <li> Relay </li>
@@ -60,14 +60,13 @@ const IntroSlides = [
         <li> APP DEMO!!! </li>
         <li> Honorable Mentions </li>
         <li> Questions </li>
-      </ol>
+      </ul>
     </div>
   </Slide>,
   <Slide bgColor="black">,
     <Heading size={2} textColor="white"> Who's using these tools </Heading>
     <Text textColor="white" textSize="2.0rem"> React - https://github.com/facebook/react/wiki/Sites-Using-React </Text>
     <Text textColor="white" textSize="2.0rem"> Relay - https://github.com/facebook/relay/blob/master/USERS.md </Text>
-    <Text textColor="white" textSize="2.0rem"> GrahpQL - https://github.com/facebook/react/wiki/Sites-Using-React </Text>
     <Text textColor="white" textSize="2.0rem"> Redux - https://github.com/reactjs/redux/issues/310 </Text>
   </Slide>,
   <Slide
@@ -78,12 +77,14 @@ const IntroSlides = [
       Terminology
     </Heading>
     <div style={{ color: '#fff' }}>
-      <ol>
+      <ul>
         <li> Higher Order Components </li>
         <li> Dumb Components </li>
         <li> Smart Components </li>
         <li> Connections </li>
-      </ol>
+        <li> ... </li>
+        <li> ... </li>
+      </ul>
     </div>
   </Slide>
 ];
