@@ -92,7 +92,7 @@ const GraphQLSlides = [
     </List>
   </Slide>,
   <Slide transition={['slide']} bgColor="black">
-    <Text textColor="white">GrahpQL Example </Text>
+    <Text textColor="white">GraphQL Example </Text>
     <Layout>
       <Fill>
         <CodePane
@@ -112,7 +112,7 @@ const GraphQLSlides = [
   </Slide>,
   <Slide bgColor="black" >
     <Heading textColor={lightPurple} size={3} textFont="primary">
-      Why GrahpQL and What Problems are being solved ?
+      Why GraphQL and What Problems are being solved ?
     </Heading>
     <Text textColor="white">
       Round Trips, Client to Server Validation, Less wory of Endpoints, Flexiblity
