@@ -1,7 +1,6 @@
 
 import React from 'react';
 
-
 import {
   Deck, Heading, ListItem, Text,
   List, Slide, Spectacle
@@ -9,9 +8,10 @@ import {
 import preloader from 'spectacle/lib/utils/preloader';
 import createTheme from 'spectacle/lib/themes/default';
 
-import { IntroSlides, ConclusionSlides,
-  ReactSlides, RelaySlides, ReduxSlides, GraphQLSlides, TestingSlides } from './slides';
-// import Interactive from "../src/interactive";
+import { 
+  IntroSlides, ConclusionSlides,
+  ReactSlides, RelaySlides, ReduxSlides, GraphQLSlides, TestingSlides 
+} from './slides';
 
 // Require CSS
 require('normalize.css');
